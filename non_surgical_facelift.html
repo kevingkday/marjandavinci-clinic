@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Non-Surgical Facelift Treatments | Marjan DaVinci Laser & Cosmetic</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              olive: '#879a74',
+              gold: '#C5A059',
+              alabaster: '#FAF9F6',
+              deep: '#2D3327',
+            }
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          },
+          borderRadius: {
+            'twelve': '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeInUp 0.8s ease-out forwards; }
+    .glass-nav {
+      background: rgba(250, 249, 246, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .bento-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .bento-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-brand-alabaster font-manrope text-brand-deep overflow-x-hidden pt-32">
+  <!-- BEGIN: Top Bar -->
+  <div class="fixed top-0 w-full z-[60] bg-brand-olive text-white h-10 hidden md:flex items-center text-xs font-semibold tracking-wide">
+    <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+      <div class="flex space-x-6 items-center">
+        <a href="mailto:Hello@marjandavinci.com" class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">mail</span>
+          <span>Hello@marjandavinci.com</span>
+        </a>
+        <a href="tel:7789992416" class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">phone</span>
+          <span>Clinic: 778-999-2416</span>
+        </a>
+        <a href="tel:7787074377" class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">phone</span>
+          <span>Dr. Sahih (Injectables): 778-707-4377</span>
+        </a>
+        <a href="https://maps.google.com/?q=6388+No.+3+Rd,+11th+Floor,+Suite+1110,+Richmond,+BC" target="_blank" class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          <span>6388 No. 3 Road, 11th Floor, Richmond BC</span>
+        </a>
+      </div>
+      <div class="flex space-x-4 items-center">
+        <a href="https://www.facebook.com/marjanlaser" target="_blank" class="hover:text-brand-gold transition-colors flex items-center">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/marjandavinci" target="_blank" class="hover:text-brand-gold transition-colors flex items-center">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END: Top Bar -->
+
+  <!-- BEGIN: Navigation -->
+  <nav class="fixed top-0 md:top-10 w-full z-50 glass-nav border-b border-brand-olive/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="home.html">
+          <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b181d278565a0df93b77ce.png"
+            alt="Marjan DaVinci Laser & Cosmetic Logo" class="h-16 w-auto object-contain" />
+        </a>
+      </div>
+      <!-- Center Links -->
+      <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest text-brand-deep/80">
+        <a class="hover:text-brand-olive transition-colors" href="home.html#services">Services</a>
+        <a class="hover:text-brand-olive transition-colors" href="home.html#about">About</a>
+        <a class="hover:text-brand-olive transition-colors" href="home.html#team">Team</a>
+        <a class="hover:text-brand-olive transition-colors" href="home.html#faq">FAQ</a>
+      </div>
+      <!-- Action Button -->
+      <div class="flex-shrink-0">
+        <a class="bg-brand-olive text-white px-8 py-3 rounded-twelve font-semibold transition-all duration-300 hover:bg-brand-gold shadow-sm"
+          href="https://davincicosmetics.janeapp.com/" target="_blank" rel="noopener">
+          Make an Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- END: Navigation -->
+
+  <!-- BEGIN: Treatment Hero -->
+  <section class="max-w-7xl mx-auto px-6 py-12 md:py-24 animate-fade-in">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="order-2 lg:order-1">
+        <div class="mb-6 flex items-center space-x-2 text-brand-olive font-bold text-xs uppercase tracking-widest">
+            <a href="home.html#services" class="hover:text-brand-gold transition-colors">Treatments</a>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <span>Non-Surgical Facelift</span>
+        </div>
+        <h1 class="font-serif text-5xl md:text-6xl mb-6 leading-tight">Non-Surgical Facelift</h1>
+        <p class="text-xl text-brand-deep/70 mb-8 leading-relaxed font-montserrat">
+          A comprehensive approach to facial rejuvenation without downtime.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+          <a href="https://davincicosmetics.janeapp.com/" target="_blank" rel="noopener"
+            class="bg-brand-deep text-white text-center px-8 py-4 rounded-twelve font-bold hover:bg-brand-olive transition-colors shadow-lg">
+            Book Non-Surgical Facelift Treatment
+          </a>
+        </div>
+        
+        <!-- Key Benefits List -->
+        <div class="space-y-4 pt-6 text-brand-deep/80 border-t border-brand-olive/10">
+            <div class="flex items-center space-x-3">
+                <span class="material-symbols-outlined text-brand-gold">check_circle</span>
+                <span class="font-medium">Reduces significantly forehead lines, crow's feet, and frown lines</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="material-symbols-outlined text-brand-gold">check_circle</span>
+                <span class="font-medium">Quick 15-minute treatment process</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="material-symbols-outlined text-brand-gold">check_circle</span>
+                <span class="font-medium">Zero downtime required — return to your day immediately</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="material-symbols-outlined text-brand-gold">check_circle</span>
+                <span class="font-medium">Results visibly show in 3-7 days, lasting up to 4 months</span>
+            </div>
+        </div>
+      </div>
+      
+      <!-- Feature Image -->
+      <div class="order-1 lg:order-2">
+        <div class="relative rounded-twelve overflow-hidden shadow-2xl aspect-[4/5] object-cover">
+          <img src="images/tx_nonsurgical_facelift_1773167913138.png" alt="Botox Treatment Patient Result" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Treatment Hero -->
+
+  <!-- BEGIN: Treatment Details -->
+  <section class="bg-white py-24 mb-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-16">
+        
+        <!-- Main Content -->
+        <div class="md:col-span-8 space-y-12">
+            <div>
+                <h2 class="font-serif text-3xl mb-6">How It Works</h2>
+                <p class="text-brand-deep/70 leading-relaxed font-montserrat space-y-4">
+                    <span>Botulinum Toxin Type A (commonly known as Botox or Dysport) is a naturally occurring, highly purified protein. It works by temporarily relaxing the specific facial muscles that cause wrinkles and lines to form when you smile, frown, or raise your eyebrows.</span>
+                    <br><br>
+                    <span>By reducing the repetitive movement of these muscles, the overlying skin is allowed to smooth out. With consistent treatments, deep lines can gradually soften and fade, while new lines are prevented from forming, leaving your skin looking remarkably refreshed and serene.</span>
+                </p>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-3xl mb-6">Common Areas Treated</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-brand-alabaster p-6 rounded-twelve border border-brand-olive/10">
+                        <h4 class="font-bold mb-2">Frown Lines (Glabella)</h4>
+                        <p class="text-sm text-brand-deep/70">The '11' lines between the eyebrows that appear when concentrating or frowning.</p>
+                    </div>
+                    <div class="bg-brand-alabaster p-6 rounded-twelve border border-brand-olive/10">
+                        <h4 class="font-bold mb-2">Forehead Lines</h4>
+                        <p class="text-sm text-brand-deep/70">Horizontal lines spanning across the upper forehead when raising eyebrows.</p>
+                    </div>
+                    <div class="bg-brand-alabaster p-6 rounded-twelve border border-brand-olive/10">
+                        <h4 class="font-bold mb-2">Crow's Feet</h4>
+                        <p class="text-sm text-brand-deep/70">Fine lines at the outer corners of the eyes that appear particularly when smiling.</p>
+                    </div>
+                    <div class="bg-brand-alabaster p-6 rounded-twelve border border-brand-olive/10">
+                        <h4 class="font-bold mb-2">Lip Flip & Smoker's Lines</h4>
+                        <p class="text-sm text-brand-deep/70">Subtle lip enhancement and smoothing of vertical lip lines around the mouth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar / Sticky CTA -->
+        <div class="md:col-span-4 relative">
+            <div class="sticky top-32 bg-brand-alabaster p-8 rounded-twelve shadow-sm border border-brand-olive/10">
+                <h3 class="font-serif text-2xl mb-4">Ready to Refresh?</h3>
+                <p class="text-sm text-brand-deep/70 mb-6 font-montserrat">Consultations are complimentary. We'll develop a personalized cosmetic plan completely customized to your aesthetic goals.</p>
+                <div class="space-y-4">
+                    <a href="https://davincicosmetics.janeapp.com/" target="_blank" rel="noopener" class="block w-full text-center bg-brand-olive text-white px-6 py-4 rounded-twelve font-bold hover:bg-brand-gold transition-colors">
+                        Make an Appointment
+                    </a>
+                    <a href="tel:7787074377" class="block w-full text-center bg-transparent border border-brand-olive text-brand-olive px-6 py-4 rounded-twelve font-bold hover:bg-brand-olive/5 transition-colors">
+                        Call Dr. Sahih (Injectables): <span class="whitespace-nowrap">778-707-4377</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <!-- END: Treatment Details -->
+
+  <!-- BEGIN: Treatment FAQs -->
+  <section class="max-w-3xl mx-auto px-6 py-12 mb-24">
+    <h2 class="font-serif text-3xl text-center mb-12">Non-Surgical Facelift FAQs</h2>
+    <div class="space-y-0 border-t border-brand-olive/10">
+      
+      <details class="group py-6 border-b border-brand-olive/10">
+        <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">
+          <span>Does the injection hurt?</span>
+          <span class="transition group-open:rotate-180">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">
+          Most patients report only minor, brief discomfort. We use the finest medical-grade micro-needles available, and the treatment only takes a few minutes. If you're sensitive, we can easily apply a topical numbing cream beforehand.
+        </p>
+      </details>
+
+      <details class="group py-6 border-b border-brand-olive/10">
+        <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">
+          <span>Will my face look frozen or unnatural?</span>
+          <span class="transition group-open:rotate-180">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">
+          Absolutely not. Our philosophy at Marjan DaVinci is 'artistry meets precision.' We specialize in administering exact, customized doses that relax targeted wrinkle-causing muscles while allowing you to maintain your beautiful, natural facial expressions.
+        </p>
+      </details>
+      
+      <details class="group py-6 border-b border-brand-olive/10">
+        <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">
+          <span>What is the aftercare?</span>
+          <span class="transition group-open:rotate-180">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">
+          Aftercare is extremely minimal. We advise keeping your head upright and avoiding touching the injected area, strenuous exercise, and alcohol for the first 24 hours. You can return to your normal daily activities immediately.
+        </p>
+      </details>
+
+    </div>
+  </section>
+  <!-- END: Treatment FAQs -->
+
+  <!-- BEGIN: Footer -->
+  <footer class="bg-white border-t border-brand-olive/10 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+        <!-- Map -->
+        <div class="w-full h-[400px] bg-brand-alabaster rounded-twelve overflow-hidden shadow-inner border border-brand-olive/10">
+          <iframe allowfullscreen="" height="100%" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.53574709007!2d-123.135496!3d49.1666824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548675262bb08ead%3A0x7e76c905ed6b6a5d!2sMarjan%20DaVinci%20Laser%20%26%20Cosmetic%20Clinic!5e1!3m2!1sen!2sca!4v1773448067594!5m2!1sen!2sca" referrerpolicy="no-referrer-when-downgrade"
+            style="border:0; filter: grayscale(100%) invert(5%) contrast(85%);" width="100%"></iframe>
+        </div>
+        <!-- Contacts -->
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-4xl mb-8">Get In Touch</h2>
+          <div class="space-y-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Location</p>
+              <p class="text-xl font-medium">6388 No. 3 Rd, 11th Floor, <br />Suite 1110, Richmond, BC</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Inquiries</p>
+              <p class="text-xl font-medium"><a href="mailto:Hello@marjandavinci.com" class="hover:text-brand-gold transition-colors">Hello@marjandavinci.com</a></p>
+              <div class="mt-2 text-brand-deep/80">
+                <p class="text-sm uppercase tracking-widest text-brand-gold font-bold">Clinic & Laser:</p>
+                <p class="text-xl font-medium"><a href="tel:7789992416" class="hover:text-brand-gold transition-colors">778-999-2416</a></p>
+              </div>
+              <div class="mt-2 text-brand-deep/80">
+                <p class="text-sm uppercase tracking-widest text-brand-gold font-bold">Dr. Sahih (Injectables):</p>
+                <p class="text-xl font-medium"><a href="tel:7787074377" class="hover:text-brand-gold transition-colors">778-707-4377</a></p>
+              </div>
+            </div>
+            <div class="flex space-x-6 pt-4">
+              <a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.instagram.com/marjandavinci" target="_blank" rel="noopener">Instagram</a>
+              <a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.facebook.com/marjanlaser" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-10 border-t border-brand-olive/5 text-xs text-brand-deep/40 tracking-widest uppercase">
+        © 2024 Marjan DaVinci Laser &amp; Cosmetic. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+  <script>
+    // Simple smooth scroll handler if needed
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+  </script>
+<script 
+  src="https://widgets.leadconnectorhq.com/loader.js"  
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+  data-widget-id="69863e437cd1e63a788d2e56"   > 
+</script>
+</body>
+</html>

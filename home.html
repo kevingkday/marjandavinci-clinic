@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Marjan DaVinci Laser &amp; Cosmetic | Artistry Meets Medical Precision</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              olive: '#879a74', // Primary theme color from DataStore
+              gold: '#C5A059',
+              alabaster: '#FAF9F6',
+              deep: '#2D3327',
+            }
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          },
+          borderRadius: {
+            'twelve': '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="custom-animations">
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .glass-nav {
+      background: rgba(250, 249, 246, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .bento-card {
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .bento-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    }
+
+    .testimonial-slider input:checked+.testimonial-content {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .testimonial-content {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .slider-dot:checked {
+      background-color: #879a74 !important;
+    }
+  </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    .testimonial-content {
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .testimonial-slider input:checked+.testimonial-content {
+      opacity: 1;
+      position: relative;
+      display: block;
+    }
+
+    .testimonial-slider {
+      position: relative;
+      min-height: 250px;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-alabaster font-manrope text-brand-deep overflow-x-hidden">
+  <!-- BEGIN: Top Bar -->
+  <div
+    class="fixed top-0 w-full z-[60] bg-brand-olive text-white h-10 hidden md:flex items-center text-xs font-semibold tracking-wide">
+    <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+      <div class="flex space-x-6 items-center">
+        <a href="mailto:Hello@marjandavinci.com"
+          class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">mail</span>
+          <span>Hello@marjandavinci.com</span>
+        </a>
+        <a href="tel:7789992416" class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">phone</span>
+          <span>Clinic: 778-999-2416</span>
+        </a>
+        <a href="tel:7787074377" class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">phone</span>
+          <span>Dr. Sahih (Injectables): 778-707-4377</span>
+        </a>
+        <a href="https://maps.google.com/?q=6388+No.+3+Rd,+11th+Floor,+Suite+1110,+Richmond,+BC" target="_blank"
+          class="flex items-center space-x-2 hover:text-brand-gold transition-colors">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          <span>6388 No. 3 Road, 11th Floor, Richmond BC</span>
+        </a>
+      </div>
+      <div class="flex space-x-4 items-center">
+        <a href="https://www.facebook.com/marjanlaser" target="_blank"
+          class="hover:text-brand-gold transition-colors flex items-center">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/marjandavinci" target="_blank"
+          class="hover:text-brand-gold transition-colors flex items-center">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END: Top Bar -->
+  <!-- BEGIN: Navigation -->
+  <nav class="fixed top-0 md:top-10 w-full z-50 glass-nav border-b border-brand-olive/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#">
+          <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b181d278565a0df93b77ce.png"
+            alt="Marjan DaVinci Laser & Cosmetic Logo" class="h-16 w-auto object-contain" />
+        </a>
+      </div>
+      <!-- Center Links -->
+      <div
+        class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest text-brand-deep/80">
+        <a class="hover:text-brand-olive transition-colors" href="#services">Services</a>
+        <a class="hover:text-brand-olive transition-colors" href="#about">About</a>
+        <a class="hover:text-brand-olive transition-colors" href="#team">Team</a>
+        <a class="hover:text-brand-olive transition-colors" href="#faq">FAQ</a>
+      </div>
+      <!-- Action Button -->
+      <div class="flex-shrink-0">
+        <a class="bg-brand-olive text-white px-8 py-3 rounded-twelve font-semibold transition-all duration-300 hover:bg-brand-gold shadow-sm"
+          href="https://davincicosmetics.janeapp.com/" target="_blank" rel="noopener">
+          Make an Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- END: Navigation -->
+  <!-- BEGIN: Hero Section -->
+  <section class="min-h-[90vh] flex flex-col md:flex-row items-stretch">
+    <!-- Left Column -->
+    <div
+      class="w-full md:w-2/5 flex items-center pl-[max(1.5rem,calc(50vw-40rem+1.5rem))] pr-8 md:pr-20 py-20 bg-brand-alabaster animate-fade-in">
+      <div class="max-w-xl">
+        <span
+          class="inline-block py-1 px-3 bg-brand-olive/10 text-brand-olive rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+          Premium Aesthetics
+        </span>
+        <h1 class="font-serif text-5xl md:text-7xl leading-none mb-8">
+          Artistry Meets <br /><span class="italic text-brand-gold">Medical Precision</span>
+        </h1>
+        <p class="text-lg text-brand-deep/70 mb-10 leading-relaxed font-montserrat">
+          Elevating natural beauty through advanced laser technology and expert-led injectable treatments. Experience
+          the science of skin health at Marjan DaVinci.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://davincicosmetics.janeapp.com/" target="_blank" rel="noopener"
+            class="bg-brand-deep text-white px-8 py-4 rounded-twelve font-bold hover:bg-brand-olive transition-colors inline-block">
+            Make an Appointment
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Right Column: High Fashion Montage Video -->
+    <div class="w-full md:w-3/5 min-h-[500px] relative">
+      <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted playsinline>
+        <source src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b2c267005051f7b82385fa.mp4"
+          type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  <!-- END: Hero Section -->
+  <!-- BEGIN: The Pillars Bar -->
+  <section class="bg-white py-12 border-y border-brand-olive/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="py-4 flex flex-col items-center">
+          <svg class="w-8 h-8 text-brand-gold mb-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+            <path
+              d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+          </svg>
+          <h3 class="font-bold text-sm uppercase tracking-widest">Evidence-Based Care</h3>
+        </div>
+        <div class="py-4 flex flex-col items-center">
+          <svg class="w-8 h-8 text-brand-gold mb-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+            <path
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-6.364l-.707-.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M12 21V5a2 2 0 012-2h0a2 2 0 012 2v11m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h0a2 2 0 012 2v11"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+          </svg>
+          <h3 class="font-bold text-sm uppercase tracking-widest">Advanced Technology</h3>
+        </div>
+        <div class="py-4 flex flex-col items-center">
+          <svg class="w-8 h-8 text-brand-gold mb-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+            <path
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+          </svg>
+          <h3 class="font-bold text-sm uppercase tracking-widest">Master Injectors</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: The Pillars Bar -->
+  <!-- BEGIN: About Us -->
+  <section class="py-24 px-6 max-w-7xl mx-auto overflow-hidden" id="about">
+    <div class="flex flex-col md:flex-row items-center gap-16">
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative z-10 w-5/6 mx-auto">
+          <img alt="Marjan DaVinci Philosophy" class="rounded-twelve shadow-2xl w-full object-cover"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407f3d78fbacc183222.jpg" />
+          <div class="absolute -bottom-8 -left-8 w-3/4 h-3/4 border-2 border-brand-gold rounded-twelve -z-10"></div>
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-brand-olive/10 rounded-full z-0 blur-xl"></div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-4">Our Philosophy</h4>
+        <h2 class="font-serif text-4xl mb-6 leading-tight">MarjanDaVinci Laser &amp; Cosmetic</h2>
+        <div class="space-y-6 text-brand-deep/70 text-lg leading-relaxed font-montserrat mb-8">
+          <p>
+            We are a physician directed cosmetic clinic and laser skin practice located in Richmond, BC. We have highly
+            experienced doctors and certified technicians with over a decade of combined experience.
+          </p>
+        </div>
+
+        <div class="space-y-6 mb-10">
+          <div class="flex items-start space-x-4">
+            <div class="mt-1 w-5 h-5 flex-shrink-0 bg-brand-gold/20 rounded-full flex items-center justify-center">
+              <div class="w-2 h-2 bg-brand-gold rounded-full"></div>
+            </div>
+            <div>
+              <p class="font-bold text-brand-deep">Physician-led Injections</p>
+              <p class="text-brand-deep/70 text-sm">Entrust your care to skilled hands with our physician-led
+                injections.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="mt-1 w-5 h-5 flex-shrink-0 bg-brand-gold/20 rounded-full flex items-center justify-center">
+              <div class="w-2 h-2 bg-brand-gold rounded-full"></div>
+            </div>
+            <div>
+              <p class="font-bold text-brand-deep">Pain Free Laser Hair Removal</p>
+              <p class="text-brand-deep/70 text-sm">Our pain free laser hair removal will liberate you from daily
+                shaving.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="mt-1 w-5 h-5 flex-shrink-0 bg-brand-gold/20 rounded-full flex items-center justify-center">
+              <div class="w-2 h-2 bg-brand-gold rounded-full"></div>
+            </div>
+            <div>
+              <p class="font-bold text-brand-deep">14+ Years of Experience</p>
+              <p class="text-brand-deep/70 text-sm">Over 14 years of expertise in laser and injectable therapies.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="inline-block bg-brand-gold text-white font-bold py-3 px-8 rounded-full hover:bg-brand-gold/90 transition-colors shadow-lg hover:shadow-xl"
+          href="#services">Learn More</a>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-white" id="why-choose-us">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-16 items-start">
+        <!-- Image Column -->
+        <div class="w-full lg:w-1/2 lg:sticky lg:top-24">
+          <div class="relative">
+            <img alt="Marjan Madani &amp; Dr. Vahid Sahiholnasab (Sahih)"
+              class="rounded-twelve shadow-xl w-full object-cover"
+              src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab98e041da22719abeb9.jpg" />
+            <p class="mt-4 text-center italic text-brand-deep/50 text-sm italic">Marjan Madani &amp; Dr. Vahid
+              Sahiholnasab (Sahih)</p>
+            <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-gold/10 -z-10 rounded-full"></div>
+          </div>
+          <!-- Value Props -->
+          <div class="mt-12 space-y-8">
+            <div class="flex gap-4">
+              <span class="material-symbols-outlined text-brand-olive text-3xl">precision_manufacturing</span>
+              <div>
+                <h4 class="font-bold text-brand-deep">Cutting-Edge Technology</h4>
+                <p class="text-brand-deep/70 text-sm">Marjan embraces the latest advancements in medical laser for
+                  unparalleled results.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="material-symbols-outlined text-brand-olive text-3xl">favorite</span>
+              <div>
+                <h4 class="font-bold text-brand-deep">Client-Centric Approach</h4>
+                <p class="text-brand-deep/70 text-sm">Years of understanding and catering to individual needs for
+                  boosted confidence.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="material-symbols-outlined text-brand-olive text-3xl">handshake</span>
+              <div>
+                <h4 class="font-bold text-brand-deep">Expert Collaboration</h4>
+                <p class="text-brand-deep/70 text-sm">Partnership with Dr. Vahid Sahih ensures premium botox treatments
+                  by an industry veteran.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Column -->
+        <div class="w-full lg:w-1/2">
+          <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-4">Why Choose Us</h4>
+          <h2 class="font-serif text-4xl md:text-5xl mb-6 leading-tight">Meet the remarkable team behind Marjan DaVinci
+            Laser and Cosmetic Clinic!</h2>
+          <div class="space-y-6 text-brand-deep/70 text-lg leading-relaxed font-montserrat mb-12">
+            <p>Dr. Sahih, a seasoned physician with 12 years of experience in aesthetics, enriches our offering with his
+              expertise in Cosmetic Medicine and other injectable treatments. He is committed to delivering top tier
+              services, ensuring every patient receives exceptional care. Dr. Sahih’s passion shines through in his
+              favourite treatment, nose augmentation.</p>
+            <p>Marjan, fuelled by her passion for medical laser since 2008, brings a wealth of experience and a personal
+              touch to the clinic. Her journey with clients and cutting edge technologies inspired her to establish her
+              own practice. Marjan understands the profound impact of medical laser on confidence and self-esteem, which
+              drives her dedication.</p>
+            <p>Together, Dr. Sahih and Marjan lead Marjan DaVinci Laser and Cosmetic Clinic with a shared vision of
+              excellence and client satisfaction, ensuring each individual feels their best through innovative
+              treatments and compassionate care.</p>
+          </div>
+          <!-- Physician Details -->
+          <div class="bg-brand-alabaster p-8 rounded-twelve border border-brand-olive/10">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="bg-brand-olive/10 p-3 rounded-full">
+                <span class="material-symbols-outlined text-brand-olive">medical_services</span>
+              </div>
+              <h3 class="font-serif text-2xl">Highly Qualified Physician</h3>
+            </div>
+            <p class="text-sm text-brand-deep/60 mb-6">Dr. Sahih is a member of the following professional associations
+              and licensing bodies:</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-brand-deep/80">
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Royal College of Physician and
+                Surgeons of Canada</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Fellow of Royal College of
+                Physician &amp; Surgeons of Canada in Medicine</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Diplomate, American Board of
+                Internal Medicine</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Diplomate, American Board of
+                Geriatric Medicine</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> American Academy of Aesthetic
+                Medicine</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> European Society for Cosmetic
+                and Aesthetic Dermatology</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> The College of Physician &amp;
+                Surgeons of BC</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> The College of Physician &amp;
+                Surgeons of AB</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> British Columbia Medical
+                Association</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Alberta Medical Association</li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Canadian Medical Association
+              </li>
+              <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> Medical Council of Canada</li>
+            </ul>
+            <div class="mt-8 bg-brand-olive/5 border border-brand-olive/20 p-4 rounded-lg flex items-start gap-4">
+              <span class="material-symbols-outlined text-brand-olive mt-1">call</span>
+              <div>
+                <p class="font-bold text-brand-deep text-sm mb-1">Direct Line for Injectables</p>
+                <p class="text-brand-deep/70 text-sm">For Botox, Fillers, and other injectable consultations, please call Dr. Sahih directly at <a href="tel:7787074377" class="text-brand-olive font-bold hover:underline">778-707-4377</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: About Us -->
+  <!-- BEGIN: Interactive Service Grid -->
+  <section class="py-24 bg-white" id="services">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-serif text-4xl md:text-5xl mb-4">Curated Treatments</h2>
+        <p class="text-brand-deep/60 max-w-2xl mx-auto">Discover our range of FDA-approved services designed for
+          transformative yet natural results.</p>
+      </div>
+      <div><!-- 21 Treatment Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: Botox -->
+          <a href="botox.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Botox"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/botox_model_1773248319143.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Botox</h3>
+              <p class="text-white/70 text-xs">Precision anti-wrinkle treatments for a refreshed, youthful look.</p>
+            </div>
+          </a>
+          <!-- Card 2: Fillers -->
+          <a href="laser_hair_removal.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Laser Hair Removal"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b43ddcd54817dc682220a4.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Laser Hair
+                Removal</h3>
+              <p class="text-white/70 text-xs">State-of-the-art permanent hair reduction for all skin types.</p>
+            </div>
+          </a>
+          <!-- Card 3: Laser Hair Removal -->
+          <a href="morpheus8.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Morpheus8"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_morpheus8_1773167706407.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Morpheus8
+              </h3>
+              <p class="text-white/70 text-xs">Advanced fractional skin treatment that stimulates collagen production.
+              </p>
+            </div>
+          </a>
+          <!-- Card 4: Chemical Peels -->
+          <a href="ultherapy.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Ultherapy"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_ultherapy_1773167720869.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Ultherapy
+              </h3>
+              <p class="text-white/70 text-xs">Non-invasive lifting and tightening for the face, neck, and chest.</p>
+            </div>
+          </a>
+          <!-- Card 5: Microneedling -->
+          <a href="hollywood_peel.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Hollywood Peel"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_hollywood_peel_1773167735441.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Hollywood
+                Peel</h3>
+              <p class="text-white/70 text-xs">A carbon-assisted laser peel for instant glow and skin refinement.</p>
+            </div>
+          </a>
+          <!-- Card 6: Morpheus8 -->
+          <a href="v_carbon.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="V-Carbon"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_vcarbon_1773167750219.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">V-Carbon</h3>
+              <p class="text-white/70 text-xs">The first anti-aging peeling system with activated carbon.</p>
+            </div>
+          </a>
+          <!-- Card 7: Hydrafacial -->
+          <a href="botox_for_men.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Botox for Men"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_botox_men_1773167763015.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Botox for Men
+              </h3>
+              <p class="text-white/70 text-xs">Tailored injectable treatments to maintain a natural, masculine edge.</p>
+            </div>
+          </a>
+          <!-- Card 8: Dermaplaning -->
+          <a href="micro_needling.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Micro-Needling"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_microneedling_1773167788209.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">
+                Micro-Needling</h3>
+              <p class="text-white/70 text-xs">Collagen induction therapy to improve skin texture and tone.</p>
+            </div>
+          </a>
+          <!-- Card 9: Lip Artistry -->
+          <a href="zo_medical.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="ZO Medical"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_zo_medical_1773167804848.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">ZO Medical
+              </h3>
+              <p class="text-white/70 text-xs">Physician-prescribed skin health solutions for transformative results.
+              </p>
+            </div>
+          </a>
+          <!-- Card 10: Body Contouring -->
+          <a href="fractional_resurfacing.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Fractional Resurfacing"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_fractional_resurfacing_1773167819057.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Fractional
+                Resurfacing</h3>
+              <p class="text-white/70 text-xs">Targeted laser therapy to diminish scars and fine lines.</p>
+            </div>
+          </a>
+          <!-- Card 11: Skin Tightening -->
+          <a href="facial_contouring.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Facial Contouring"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_facial_contouring_1773167831228.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Facial
+                Contouring</h3>
+              <p class="text-white/70 text-xs">Expertly sculpting your natural features for perfect balance.</p>
+            </div>
+          </a>
+          <!-- Card 12: Laser Resurfacing -->
+          <a href="dysport.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Dysport"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_dysport_1773167843113.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Dysport</h3>
+              <p class="text-white/70 text-xs">A fast-acting injectable to smooth moderate to severe frown lines.</p>
+            </div>
+          </a>
+          <!-- Card 13: Carbon Peel -->
+          <a href="facial_augmentations.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Facial Augmentations"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_facial_augmentations_1773167855988.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Facial
+                Augmentations</h3>
+              <p class="text-white/70 text-xs">Enhancing volume and definition with premium dermal fillers.</p>
+            </div>
+          </a>
+          <!-- Card 14: Acne Treatment -->
+          <a href="acne_treatment.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Acne Treatment"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_vcarbon_1773167750219.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Acne
+                Treatment</h3>
+              <p class="text-white/70 text-xs">Advanced light and laser therapies to clear blemishes and restore skin.
+              </p>
+            </div>
+          </a>
+          <!-- Card 15: PRP Therapy -->
+          <a href="lateral_lift.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Lateral Lift"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_lateral_lift_1773167897592.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Lateral Lift
+              </h3>
+              <p class="text-white/70 text-xs">Subtle brow and eye area lifting for a more open, rested look.</p>
+            </div>
+          </a>
+          <!-- Card 16: CoolSculpting -->
+          <a href="non_surgical_facelift.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Non-Surgical Facelift"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_nonsurgical_facelift_1773167913138.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Non-Surgical
+                Facelift</h3>
+              <p class="text-white/70 text-xs">A comprehensive approach to facial rejuvenation without downtime.</p>
+            </div>
+          </a>
+          <!-- Card 17: Mesotherapy -->
+          <a href="sculptra.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Sculptra"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_sculptra_1773167925716.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Sculptra</h3>
+              <p class="text-white/70 text-xs">Biostimulatory filler that gradually restores facial volume.</p>
+            </div>
+          </a>
+          <!-- Card 18: Vitamin Injections -->
+          <a href="facial_prp.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Facial PRP"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_facial_prp_1773167939715.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Facial PRP
+              </h3>
+              <p class="text-white/70 text-xs">Utilizing your own growth factors for natural skin regeneration.</p>
+            </div>
+          </a>
+          <!-- Card 19: LED Light Therapy -->
+          <a href="prp_for_hair_loss.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="PRP for Hair Loss"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/tx_prp_hair_loss_1773167956958.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">PRP for Hair
+                Loss</h3>
+              <p class="text-white/70 text-xs">Revolutionary therapy to stimulate hair follicle growth and density.</p>
+            </div>
+          </a>
+          <!-- Card 20: Nose Filler -->
+          <a href="nose_filler.html" class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Nose Filler"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/nose_filler_1773248332017.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Nose Filler
+              </h3>
+              <p class="text-white/70 text-xs">Non-surgical rhinoplasty for a perfectly contoured and balanced profile.
+              </p>
+            </div>
+          </a>
+          <!-- Card 21: Masseter Botox -->
+          <a href="masseter_botox.html"
+            class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]">
+            <img alt="Masseter Botox"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="images/masseter_botox_1773248344570.png" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">Masseter
+                Botox</h3>
+              <p class="text-white/70 text-xs">Slimming the jawline and relieving tension with precision injections.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Interactive Service Grid -->
+  <!-- BEGIN: Spotlight Section -->
+  <section class="bg-brand-olive/10 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h4 class="text-brand-olive font-bold uppercase tracking-widest text-sm mb-4">Signature Treatment</h4>
+          <h2 class="font-serif text-4xl md:text-5xl mb-6">Laser Hair Removal</h2>
+          <p class="text-brand-deep/70 text-lg mb-8 leading-relaxed">
+            Our state-of-the-art laser system provides effective hair reduction for all skin types. Smooth, hair-free
+            skin is now achievable with zero downtime and maximum comfort.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 mb-10">
+            <div class="bg-white p-6 rounded-twelve flex-1 shadow-sm">
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Full Body</p>
+              <p class="text-3xl font-serif text-brand-deep">$650<span
+                  class="text-sm font-sans text-brand-deep/50">/session</span></p>
+            </div>
+            <div class="bg-white p-6 rounded-twelve flex-1 shadow-sm">
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Face &amp; Neck</p>
+              <p class="text-3xl font-serif text-brand-deep">$140<span
+                  class="text-sm font-sans text-brand-deep/50">/session</span></p>
+            </div>
+          </div>
+          <a href="pricing.html"
+            class="inline-block bg-brand-olive text-white px-10 py-4 rounded-twelve font-bold shadow-lg hover:shadow-xl transition-all">
+            View Full Pricing
+          </a>
+        </div>
+        <div class="h-full w-full">
+          <img alt="Laser Hair Removal Treatment" class="rounded-twelve w-full h-full object-cover shadow-xl"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b43ddcd54817dc682220a4.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Spotlight Section -->
+  <!-- BEGIN: Departments -->
+  <section class="py-24 bg-brand-alabaster/50" id="departments">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">Departments</h2>
+        <p class="text-brand-deep/70 text-lg leading-relaxed font-montserrat">
+          Discover our specialized departments, each crafted to address distinct beauty and health needs. From advanced
+          laser therapies to precision injectables, our categories ensure focused care. Explore a holistic approach to
+          rejuvenation with a suite of treatments, expertly organized for clarity and convenience.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8 lg:gap-16">
+        <!-- Tabs List -->
+        <div class="w-full md:w-1/3 lg:w-1/4 flex flex-col border-l border-brand-olive/20">
+          <button
+            class="dept-tab active text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 font-bold text-brand-olive border-brand-olive"
+            data-target="dept-1">
+            Laser Treatments
+          </button>
+          <button
+            class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster"
+            data-target="dept-2">
+            Injectables and Fillers
+          </button>
+          <button
+            class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster"
+            data-target="dept-3">
+            Facial Treatments
+          </button>
+          <button
+            class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster"
+            data-target="dept-4">
+            Lifts and Contouring
+          </button>
+          <button
+            class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster"
+            data-target="dept-5">
+            Targeted Therapies
+          </button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="w-full md:w-2/3 lg:w-3/4">
+          <!-- Content 1 -->
+          <div id="dept-1" class="dept-content flex flex-col lg:flex-row gap-8 animate-fade-in">
+            <div class="flex-1 space-y-6">
+              <h3 class="text-3xl font-serif text-brand-olive">Laser Treatments</h3>
+              <p class="italic text-brand-deep/80 leading-relaxed text-lg">
+                Discover the transformative power of laser treatments, an innovation that's been revolutionizing
+                skincare for decades. Embrace the precision and efficacy of lasers, allowing you to target specific
+                concerns with unmatched accuracy.
+              </p>
+              <p class="text-brand-deep/70 font-montserrat leading-relaxed">
+                Laser treatments offer a non-invasive solution to a plethora of skin challenges. Whether it's hair
+                removal, skin tightening, or addressing pigmentation, lasers provide quick and lasting results.
+                Experience a renewed sense of confidence with treatments tailored to your unique needs.
+              </p>
+            </div>
+            <div class="w-full lg:w-5/12">
+              <img src="images/tx_laser_hair_removal_1773167689107.png" alt="Laser Treatments"
+                class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" />
+            </div>
+          </div>
+
+          <!-- Content 2 -->
+          <div id="dept-2" class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in">
+            <div class="flex-1 space-y-6">
+              <h3 class="text-3xl font-serif text-brand-olive">Injectables and Fillers</h3>
+              <p class="italic text-brand-deep/80 leading-relaxed text-lg">
+                Step into the world of injectables and fillers, the secret behind many youthful and rejuvenated
+                appearances. These treatments, when applied with expertise, can beautifully enhance one's natural
+                features, subtly erasing the marks of time.
+              </p>
+              <p class="text-brand-deep/70 font-montserrat leading-relaxed">
+                Injectables and fillers provide immediate results with minimal downtime. They offer a solution to volume
+                loss, wrinkles, and facial contouring, creating a smoother and plumper aesthetic. Trust in the hands of
+                professionals to achieve a refreshed, natural look tailored just for you.
+              </p>
+              <div class="pt-4 border-t border-brand-olive/20 inline-block">
+                <p class="font-bold text-brand-deep text-sm mb-1">Direct Line for Injectables</p>
+                <a href="tel:7787074377" class="inline-flex items-center gap-2 text-brand-olive font-bold hover:text-brand-gold transition-colors">
+                  <span class="material-symbols-outlined text-sm">call</span>
+                  778-707-4377
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:w-5/12">
+              <img src="images/tx_botox_1773167674909.png" alt="Injectables and Fillers"
+                class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" />
+            </div>
+          </div>
+
+          <!-- Content 3 -->
+          <div id="dept-3" class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in">
+            <div class="flex-1 space-y-6">
+              <h3 class="text-3xl font-serif text-brand-olive">Facial Treatments</h3>
+              <p class="italic text-brand-deep/80 leading-relaxed text-lg">
+                Indulge in the luxury of facial treatments, a perfect blend of relaxation and rejuvenation. These
+                procedures not only pamper your skin but also address specific concerns, restoring its natural glow and
+                vitality.
+              </p>
+              <p class="text-brand-deep/70 font-montserrat leading-relaxed">
+                Facial treatments offer a multi-pronged approach to skin health. From deep cleansing and exfoliation to
+                targeted serums and therapeutic masks, each step is designed to enhance your skin's health and
+                appearance. Experience the combined benefits of relaxation and targeted skincare in one session.
+              </p>
+            </div>
+            <div class="w-full lg:w-5/12">
+              <img src="images/tx_hollywood_peel_1773167735441.png" alt="Facial Treatments"
+                class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" />
+            </div>
+          </div>
+
+          <!-- Content 4 -->
+          <div id="dept-4" class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in">
+            <div class="flex-1 space-y-6">
+              <h3 class="text-3xl font-serif text-brand-olive">Lifts and Contouring</h3>
+              <p class="italic text-brand-deep/80 leading-relaxed text-lg">
+                Dive into the realm of lifts and contouring, where art meets science to redefine and accentuate facial
+                structures. These procedures are a testament to how subtle changes can make profound impacts, lifting
+                years off one's appearance.
+              </p>
+              <p class="text-brand-deep/70 font-montserrat leading-relaxed">
+                Lifts and contouring treatments are the bridge between non-invasive procedures and surgical
+                interventions. They provide the means to achieve a firmer, more defined look without the need for
+                extensive surgeries. By targeting specific areas, these treatments sculpt and elevate, delivering a
+                refreshed and youthful contour.
+              </p>
+            </div>
+            <div class="w-full lg:w-5/12">
+              <img src="images/tx_ultherapy_1773167720869.png" alt="Lifts and Contouring"
+                class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" />
+            </div>
+          </div>
+
+          <!-- Content 5 -->
+          <div id="dept-5" class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in">
+            <div class="flex-1 space-y-6">
+              <h3 class="text-3xl font-serif text-brand-olive">Targeted Therapies</h3>
+              <p class="italic text-brand-deep/80 leading-relaxed text-lg">
+                Embark on the journey of targeted therapies, where precision and individualized treatment plans come to
+                the forefront. Tailored to address specific concerns, these therapies offer solutions that are both
+                effective and efficient.
+              </p>
+              <p class="text-brand-deep/70 font-montserrat leading-relaxed">
+                Targeted therapies are a testament to the advancements in aesthetic medicine. By honing in on particular
+                issues—whether it's hair loss, pigmentation, or specific skin conditions—these treatments deliver
+                powerful results with a keen focus. Benefit from the marriage of cutting-edge technology and expert
+                application in each session.
+              </p>
+            </div>
+            <div class="w-full lg:w-5/12">
+              <img src="images/tx_prp_hair_loss_1773167956958.png" alt="Targeted Therapies"
+                class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Departments -->
+  <!-- BEGIN: Specialist Profiles -->
+  <section class="py-24 max-w-7xl mx-auto px-6" id="team">
+    <div class="text-center mb-16">
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Meet Our Experts</h2>
+      <p class="text-brand-deep/60">Guided by the hands of medical professionals.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Specialist 1 -->
+      <div class="text-center">
+        <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
+          <img alt="Dr. Vahid Sahihnolnasab" class="w-full h-full object-cover"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab9814ebc365534ac9c0.jpg" />
+        </div>
+        <h3 class="text-xl font-bold mb-1">Dr. Vahid Sahihnolnasab</h3>
+        <p class="text-brand-gold text-sm font-semibold uppercase tracking-widest mb-3">Chief Medical Director</p>
+        <div class="flex justify-center space-x-1 mb-4 text-brand-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+      <!-- Specialist 2 -->
+      <div class="text-center">
+        <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
+          <img alt="Marjan Madani" class="w-full h-full object-cover"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab9880d3591e775ceac5.jpg" />
+        </div>
+        <h3 class="text-xl font-bold mb-1">Marjan Madani</h3>
+        <p class="text-brand-gold text-sm font-semibold uppercase tracking-widest mb-3">Medical Laser Specialist</p>
+        <div class="flex justify-center space-x-1 mb-4 text-brand-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+      <!-- Specialist 3 -->
+      <div class="text-center">
+        <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
+          <img alt="Leila Sahih" class="w-full h-full object-cover"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab98e041da4c2c9abeb4.jpeg" />
+        </div>
+        <h3 class="text-xl font-bold mb-1">Leila Sahih</h3>
+        <p class="text-brand-gold text-sm font-semibold uppercase tracking-widest mb-3">Aesthetician, Laser Technician
+        </p>
+        <div class="flex justify-center space-x-1 mb-4 text-brand-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+      <!-- Specialist 4 -->
+      <div class="text-center">
+        <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
+          <img alt="Angela Huang" class="w-full h-full object-cover"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b197f7c2389c3fb84e8abf.jpg" />
+        </div>
+        <h3 class="text-xl font-bold mb-1">Angela Huang</h3>
+        <p class="text-brand-gold text-sm font-semibold uppercase tracking-widest mb-3">Aesthetician, Medical Assistant,
+          Laser Technician</p>
+        <div class="flex justify-center space-x-1 mb-4 text-brand-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+      <!-- Specialist 5 -->
+      <div class="text-center">
+        <div
+          class="aspect-square mb-6 overflow-hidden rounded-twelve bg-brand-olive/5 flex items-center justify-center">
+          <span class="material-symbols-outlined text-brand-olive/20 text-6xl">person</span>
+        </div>
+        <h3 class="text-xl font-bold mb-1">Lavenda</h3>
+        <p class="text-brand-gold text-sm font-semibold uppercase tracking-widest mb-3">Medical Assistant</p>
+        <div class="flex justify-center space-x-1 mb-4 text-brand-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-brand-alabaster overflow-hidden" id="testimonials">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-serif text-4xl md:text-5xl mb-4">What Our Patients Say</h2>
+        <div class="w-12 h-0.5 bg-brand-gold mx-auto"></div>
+      </div>
+      <div class="relative testimonial-slider">
+        <!-- Testimonial 1 -->
+        <input checked="" class="hidden slider-dot" id="t-1" name="testimonial" type="radio" />
+        <div class="testimonial-content text-center">
+          <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">
+            "Just had a hydrafacial with Marjan and it was so good! She is very kind and professional and explained everything clearly me, my skin felt/looked so sparkling clean afterwards. Her hydrafacial is also very reasonably priced compared to other places which is awesome. My family gave me many compliments when I got home after the appointment! I highly recommend her and I definitely will be going back in the future."
+          </p>
+          <div class="space-y-1">
+            <h4 class="font-bold text-lg">A Rimland</h4>
+            <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">Hydrafacial</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <input class="hidden slider-dot" id="t-2" name="testimonial" type="radio" />
+        <div class="testimonial-content text-center">
+          <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">
+            "Great place to get your laser hair removal done! Worth the drive all the way from Washington. Marjan is very accommodating and knowledgeable. I always feel comfortable and I feel like I can completely trust her. Highly recommend!"
+          </p>
+          <div class="space-y-1">
+            <h4 class="font-bold text-lg">Judith Kangleon</h4>
+            <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">Laser Hair Removal</p>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <input class="hidden slider-dot" id="t-3" name="testimonial" type="radio" />
+        <div class="testimonial-content text-center">
+          <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">
+            "Marjan has made miracles happen in my under arms and bikini. I have been going to her for the past 6 months and she has changed my life!! Marjan herself is such a kind lady. And is so welcoming and warm every single time I’m there. She is not pushy about trying to sell services and instead she is very educated about the topics that it sells itself. Thank you so much Marjan!!"
+          </p>
+          <div class="space-y-1">
+            <h4 class="font-bold text-lg">M</h4>
+            <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">Laser Hair Removal</p>
+          </div>
+        </div>
+        <!-- Testimonial 4 -->
+        <input class="hidden slider-dot" id="t-4" name="testimonial" type="radio" />
+        <div class="testimonial-content text-center">
+          <p class="font-serif text-lg md:text-2xl italic text-brand-deep/80 leading-relaxed mb-8">
+            "Thanks Marjan! I came here for laser hair removal for over a year and I've had amazing results. I'll be going once a year now just for touch ups. I was intimidated to go to a larger beauty place, but I felt like Marjan was like family. She also educated me on the process of hair removal and growth. I appreciated the discounts for some of the laser hair removal services, the prices are more affordable compared to other places I looked at in Richmond."
+          </p>
+          <div class="space-y-1">
+            <h4 class="font-bold text-lg">Nikki An</h4>
+            <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">Laser Hair Removal</p>
+          </div>
+        </div>
+        <!-- Testimonial 5 -->
+        <input class="hidden slider-dot" id="t-5" name="testimonial" type="radio" />
+        <div class="testimonial-content text-center">
+          <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">
+            "100% recommended!! I got good results and Marjan is very gentle and kind whenever I go see her. She won’t force you to do this treatment instead she will educate you. Such a lovely woman and I’m always happy seeing her because she makes good connections with her clients. If you need a laser treatment, you should consider going to her."
+          </p>
+          <div class="space-y-1">
+            <h4 class="font-bold text-lg">Crishelyn Pamintuan</h4>
+            <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">Laser Treatments</p>
+          </div>
+        </div>
+        <!-- Navigation Dots -->
+        <div class="flex justify-center space-x-3 mt-12">
+          <label
+            class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors"
+            for="t-1"></label>
+          <label
+            class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors"
+            for="t-2"></label>
+          <label
+            class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors"
+            for="t-3"></label>
+          <label
+            class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors"
+            for="t-4"></label>
+          <label
+            class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors"
+            for="t-5"></label>
+        </div>
+        <!-- Arrows -->
+        <div class="absolute top-1/2 -translate-y-1/2 left-0 hidden md:block">
+          <span class="material-symbols-outlined text-brand-olive cursor-pointer select-none">chevron_left</span>
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 right-0 hidden md:block">
+          <span class="material-symbols-outlined text-brand-olive cursor-pointer select-none">chevron_right</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Specialist Profiles -->
+  <!-- BEGIN: FAQ Section -->
+  <section class="py-24 bg-white" id="faq">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-serif text-4xl text-center mb-16">Frequently Asked Questions</h2>
+      <div class="space-y-0 border-t border-brand-olive/10">
+        <!-- Question 1 -->
+        <details class="group py-6 border-b border-brand-olive/10">
+          <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">
+            <span>What can I expect during my first consultation?</span>
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">
+            Your first visit involves a comprehensive skin analysis and a deep dive into your aesthetic goals. We
+            discuss medical history, lifestyle, and create a roadmap tailored specifically to your needs.
+          </p>
+        </details>
+        <!-- Question 2 -->
+        <details class="group py-6 border-b border-brand-olive/10">
+          <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">
+            <span>How long do dermal filler results last?</span>
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">
+            Typically, results last anywhere from 6 to 18 months depending on the product used and the area treated.
+            Metabolism and lifestyle also play a factor in longevity.
+          </p>
+        </details>
+        <!-- Question 3 -->
+        <details class="group py-6 border-b border-brand-olive/10">
+          <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">
+            <span>Is laser hair removal permanent?</span>
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">
+            Laser hair removal provides long-term hair reduction. Most patients experience a significant and permanent
+            decrease in hair growth after a full course of treatments.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+  <!-- END: FAQ Section -->
+  <!-- BEGIN: Awards Section -->
+  <section class="py-24 border-t border-brand-olive/10 bg-brand-alabaster" id="awards">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h4 class="text-brand-olive font-bold uppercase tracking-widest text-sm mb-4">Excellence Recognized</h4>
+      <h2 class="font-serif text-4xl md:text-5xl mb-12">Best Laser in Richmond</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-center">
+        <!-- 2025 Award -->
+        <div class="flex flex-col items-center">
+          <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a309f3d78f3028180684.jpg"
+            target="_blank" rel="noopener">
+            <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a309f3d78f3028180684.jpg"
+              alt="2025 Best Laser in Richmond"
+              class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-twelve hover:scale-105 transition-transform duration-300 cursor-pointer" />
+          </a>
+        </div>
+        <!-- 2024 Award -->
+        <div class="flex flex-col items-center">
+          <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a30978565a847841e810.jpg"
+            target="_blank" rel="noopener">
+            <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a30978565a847841e810.jpg"
+              alt="2024 Best Laser in Richmond"
+              class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-twelve hover:scale-105 transition-transform duration-300 cursor-pointer" />
+          </a>
+        </div>
+        <!-- 2023 Award -->
+        <div class="flex flex-col items-center">
+          <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b478565a145a41ac74.jpg"
+            target="_blank" rel="noopener">
+            <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b478565a145a41ac74.jpg"
+              alt="2023 Best Laser in Richmond"
+              class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-twelve hover:scale-105 transition-transform duration-300 cursor-pointer" />
+          </a>
+        </div>
+        <!-- 2022 Award -->
+        <div class="flex flex-col items-center">
+          <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b48d3eae93b61c882c.jpg"
+            target="_blank" rel="noopener">
+            <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b48d3eae93b61c882c.jpg"
+              alt="2022 Best Laser in Richmond"
+              class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-twelve hover:scale-105 transition-transform duration-300 cursor-pointer" />
+          </a>
+        </div>
+        <!-- 2021 Award -->
+        <div class="flex flex-col items-center">
+          <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b47fc07cb3bd98b359.jpg"
+            target="_blank" rel="noopener">
+            <img src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b47fc07cb3bd98b359.jpg"
+              alt="2021 Best Laser in Richmond"
+              class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-twelve hover:scale-105 transition-transform duration-300 cursor-pointer" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Awards Section -->
+  <!-- BEGIN: Social Proof -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-end mb-12">
+        <h2 class="font-serif text-3xl">Clinic Life @marjandavinci</h2>
+        <a class="text-brand-olive font-bold text-sm uppercase tracking-widest border-b-2 border-brand-olive"
+          href="https://www.instagram.com/marjandavinci" target="_blank" rel="noopener">Follow Instagram</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a4078cb259f4c33f49be.jpg"
+          target="_blank" rel="noopener">
+          <img alt="Clinic photo 1"
+            class="rounded-twelve aspect-square object-cover w-full h-full hover:scale-105 transition-transform duration-300 cursor-pointer"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a4078cb259f4c33f49be.jpg" />
+        </a>
+        <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407f3d78fbacc183222.jpg"
+          target="_blank" rel="noopener">
+          <img alt="Clinic photo 2"
+            class="rounded-twelve aspect-square object-cover w-full h-full hover:scale-105 transition-transform duration-300 cursor-pointer"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407f3d78fbacc183222.jpg" />
+        </a>
+        <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407bfc81f71018c4e45.jpg"
+          target="_blank" rel="noopener">
+          <img alt="Clinic photo 3"
+            class="rounded-twelve aspect-square object-cover w-full h-full hover:scale-105 transition-transform duration-300 cursor-pointer"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407bfc81f71018c4e45.jpg" />
+        </a>
+        <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407bfc81fb86b8c4e46.jpg"
+          target="_blank" rel="noopener">
+          <img alt="Clinic photo 4"
+            class="rounded-twelve aspect-square object-cover w-full h-full hover:scale-105 transition-transform duration-300 cursor-pointer"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a407bfc81fb86b8c4e46.jpg" />
+        </a>
+        <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a4078d3eae25751cecc7.jpg"
+          target="_blank" rel="noopener">
+          <img alt="Clinic photo 5"
+            class="rounded-twelve aspect-square object-cover w-full h-full hover:scale-105 transition-transform duration-300 cursor-pointer"
+            src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a4078d3eae25751cecc7.jpg" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: Social Proof -->
+  <!-- BEGIN: Footer -->
+  <footer class="bg-white border-t border-brand-olive/10 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+        <!-- Map -->
+        <div
+          class="w-full h-[400px] bg-brand-alabaster rounded-twelve overflow-hidden shadow-inner border border-brand-olive/10">
+          <iframe allowfullscreen="" height="100%" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.53574709007!2d-123.135496!3d49.1666824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548675262bb08ead%3A0x7e76c905ed6b6a5d!2sMarjan%20DaVinci%20Laser%20%26%20Cosmetic%20Clinic!5e1!3m2!1sen!2sca!4v1773448067594!5m2!1sen!2sca" referrerpolicy="no-referrer-when-downgrade"
+            style="border:0; filter: grayscale(100%) invert(5%) contrast(85%);" width="100%"></iframe>
+        </div>
+        <!-- Contacts -->
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-4xl mb-8">Get In Touch</h2>
+          <div class="space-y-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Location</p>
+              <p class="text-xl font-medium">6388 No. 3 Rd, 11th Floor, <br />Suite 1110, Richmond, BC</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Inquiries</p>
+              <p class="text-xl font-medium"><a href="mailto:Hello@marjandavinci.com" class="hover:text-brand-gold transition-colors">Hello@marjandavinci.com</a></p>
+              <div class="mt-2 text-brand-deep/80">
+                <p class="text-sm uppercase tracking-widest text-brand-gold font-bold">Clinic & Laser:</p>
+                <p class="text-xl font-medium"><a href="tel:7789992416" class="hover:text-brand-gold transition-colors">778-999-2416</a></p>
+              </div>
+              <div class="mt-2 text-brand-deep/80">
+                <p class="text-sm uppercase tracking-widest text-brand-gold font-bold">Dr. Sahih (Injectables):</p>
+                <p class="text-xl font-medium"><a href="tel:7787074377" class="hover:text-brand-gold transition-colors">778-707-4377</a></p>
+              </div>
+            </div>
+            <div class="flex space-x-6 pt-4">
+              <a class="text-brand-deep hover:text-brand-gold transition-colors"
+                href="https://www.instagram.com/marjandavinci" target="_blank" rel="noopener">Instagram</a>
+              <a class="text-brand-deep hover:text-brand-gold transition-colors"
+                href="https://www.facebook.com/marjanlaser" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-10 border-t border-brand-olive/5 text-xs text-brand-deep/40 tracking-widest uppercase">
+        © 2024 Marjan DaVinci Laser &amp; Cosmetic. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+  <script>
+      (function () {
+        const testimonials = document.querySelectorAll('input[name="testimonial"]');
+        let currentIndex = 0;
+        const intervalTime = 5000;
+
+        function nextTestimonial() {
+          currentIndex = (currentIndex + 1) % testimonials.length;
+          testimonials[currentIndex].checked = true;
+        }
+
+        let autoPlayInterval = setInterval(nextTestimonial, intervalTime);
+
+        // Reset timer on user interaction
+        const sliderLabels = document.querySelectorAll('.testimonial-slider label');
+        sliderLabels.forEach(label => {
+          label.addEventListener('click', () => {
+            clearInterval(autoPlayInterval);
+            const targetId = label.getAttribute('for');
+            testimonials.forEach((input, index) => {
+              if (input.id === targetId) currentIndex = index;
+            });
+            autoPlayInterval = setInterval(nextTestimonial, intervalTime);
+          });
+        });
+        // Departments Tabs Functionality
+        const deptTabs = document.querySelectorAll('.dept-tab');
+        const deptContents = document.querySelectorAll('.dept-content');
+
+        deptTabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            // Remove active state from all tabs
+            deptTabs.forEach(t => {
+              t.classList.remove('font-bold', 'text-brand-olive', 'border-brand-olive');
+              t.classList.add('text-brand-deep/60', 'border-transparent');
+            });
+            // Add active state to clicked tab
+            tab.classList.add('font-bold', 'text-brand-olive', 'border-brand-olive');
+            tab.classList.remove('text-brand-deep/60', 'border-transparent');
+
+            // Hide all content blocks
+            deptContents.forEach(c => {
+              c.classList.add('hidden');
+              c.classList.remove('flex');
+            });
+            // Show targeted content block
+            const targetId = tab.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            if (targetContent) {
+              targetContent.classList.remove('hidden');
+              targetContent.classList.add('flex');
+            }
+          });
+        });
+      })();
+  </script>
+<script 
+  src="https://widgets.leadconnectorhq.com/loader.js"  
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+  data-widget-id="69863e437cd1e63a788d2e56"   > 
+</script>
+</body>
+
+</html>
