@@ -101,7 +101,7 @@ html
 }</script>
 </head>
 <body class="bg-brand-alabaster font-manrope text-brand-deep overflow-x-hidden pt-32">
- 開始：頂部欄 
+<!-- BEGIN: Top Bar -->
 <div class="fixed top-0 w-full z-[60] bg-brand-olive text-white h-10 hidden md:flex items-center text-xs font-semibold tracking-wide">
 <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
 <div class="flex space-x-6 items-center">
@@ -109,8 +109,7 @@ html
 <span>Hello@marjandavinci.com</span></a>
 <a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7789992416"><span class="material-symbols-outlined text-sm">電話</span>
 <span>診所：778-999-2416</span></a>
-<a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7787074377"><span class="material-symbols-outlined text-sm">電話</span>
-<span>博士。 Sahih（注射劑）：778-707-4377</span></a>
+<a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7787074377">Sahih 博士（注射劑）：778-707-4377</a>
 <a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="https://maps.google.com/?q=6388+No.+3+Rd,+11th+Floor,+Suite+1110,+Richmond,+BC" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span>
 <span>6388 No. 3 Road, 11th Floor, Richmond BC</span></a>
 </div>
@@ -120,37 +119,39 @@ html
 </div>
 </div>
 </div>
- 結束：頂部欄 
- 開始：導航 
+<!-- END: Top Bar -->
+<!-- BEGIN: Navigation -->
 <nav class="fixed top-0 md:top-10 w-full z-50 glass-nav border-b border-brand-olive/10 transition-all duration-300">
 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
- 標識 
+<!-- Logo -->
 <div class="flex-shrink-0">
-<a href="home.html"><img alt="Marjan DaVinci Laser &amp; Cosmetic Logo" class="h-16 w-auto object-contain" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b181d278565a0df93b77ce.png"/></a>
+<a href="home.html">服務</a>
 </div>
- 中心連結 
+<!-- Center Links -->
 <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest text-brand-deep/80">
-<a class="hover:text-brand-olive transition-colors" href="home.html#services">服務</a>
+<a class="hover:text-brand-olive transition-colors" href="home.html#services">關於</a>
 <a class="hover:text-brand-olive transition-colors" href="home.html#about">關於</a>
-<a class="hover:text-brand-olive transition-colors" href="home.html#team">團隊</a>
-<a class="hover:text-brand-olive transition-colors" href="home.html#faq">治療方法</a>
+<a class="hover:text-brand-olive transition-colors" href="home.html#team">常問問題</a>
+<a class="hover:text-brand-olive transition-colors" href="home.html#faq">常問問題</a>
 </div>
- 動作按鈕 
+<!-- Action Button -->
 <div class="flex items-center">
-<div class="flex items-center space-x-2 text-xs font-bold tracking-widest text-brand-deep/80 mr-4 md:mr-6" id="language-switcher">
-<a class="hover:text-brand-olive transition-colors" href="../sculptra.html">EN</a>
+
+
+<div class="flex items-center space-x-3 text-sm font-bold tracking-widest text-brand-deep/80 mr-4 md:mr-6" id="language-switcher" translate="no">
+<a class="hover:text-brand-olive transition-colors font-sans" href="/sculptra.html">EN</a>
 <span class="text-brand-olive/30">|</span>
-<a class="hover:text-brand-olive transition-colors font-sans" href="../zh-cn/sculptra.html">简</a>
+<a class="hover:text-brand-olive transition-colors font-sans" href="/zh-cn/sculptra.html">简</a>
 <span class="text-brand-olive/30">|</span>
-<a class="hover:text-brand-olive transition-colors font-sans" href="sculptra.html">繁</a>
+<a class="hover:text-brand-olive transition-colors font-sans" href="/zh-tw/sculptra.html">繁</a>
 </div>
 <div class="flex-shrink-0">
 <a class="bg-brand-olive text-white px-8 py-3 rounded-twelve font-semibold transition-all duration-300 hover:bg-brand-gold shadow-sm" href="https://davincicosmetics.janeapp.com/" rel="noopener" target="_blank">預約</a>
 </div></div>
 </div>
 </nav>
- 結束：導航 
- 開始：治療英雄 
+<!-- END: Navigation -->
+<!-- BEGIN: Treatment Hero -->
 <section class="max-w-7xl mx-auto px-6 py-12 md:py-24 animate-fade-in">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div class="order-2 lg:order-1">
@@ -164,7 +165,7 @@ html
 <div class="flex flex-col sm:flex-row gap-4 mb-10">
 <a class="bg-brand-deep text-white text-center px-8 py-4 rounded-twelve font-bold hover:bg-brand-olive transition-colors shadow-lg" href="https://davincicosmetics.janeapp.com/" rel="noopener" target="_blank">預約 Sculptra 治療</a>
 </div>
- 主要優勢列表 
+<!-- Key Benefits List -->
 <div class="space-y-4 pt-6 text-brand-deep/80 border-t border-brand-olive/10">
 <div class="flex items-center space-x-3">
 <span class="material-symbols-outlined text-brand-gold">檢查圓</span>
@@ -172,7 +173,7 @@ html
 </div>
 <div class="flex items-center space-x-3">
 <span class="material-symbols-outlined text-brand-gold">檢查圓</span>
-<span class="font-medium">15分鐘快速治療過程</span>
+<span class="font-medium">零停機時間－立即恢復正常運作</span>
 </div>
 <div class="flex items-center space-x-3">
 <span class="material-symbols-outlined text-brand-gold">檢查圓</span>
@@ -184,7 +185,7 @@ html
 </div>
 </div>
 </div>
- 結束：治療英雄 
+<!-- Feature Image -->
 <div class="order-1 lg:order-2">
 <div class="relative rounded-twelve overflow-hidden shadow-2xl aspect-[4/5] object-cover">
 <img alt="Botox Treatment Patient Result" class="w-full h-full object-cover" src="../images/tx_sculptra_1773167925716.png"/>
@@ -192,11 +193,11 @@ html
 </div>
 </div>
 </section>
- 開始：治療細節 
- 開始：治療細節 
+<!-- END: Treatment Hero -->
+<!-- BEGIN: Treatment Details -->
 <section class="bg-white py-24 mb-10">
 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-16">
- 主要內容 
+<!-- Main Content -->
 <div class="md:col-span-8 space-y-12">
 <div>
 <h2 class="font-serif text-3xl mb-6">它是如何運作的</h2>
@@ -209,7 +210,7 @@ html
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div class="bg-brand-alabaster p-6 rounded-twelve border border-brand-olive/10">
 <h4 class="font-bold mb-2">眉間紋（眉間紋）</h4>
-<p class="text-sm text-brand-deep/70">集中註意力或皺眉時眉毛之間出現的「11」線。</p>
+<p class="text-sm text-brand-deep/70">額頭紋</p>
 </div>
 <div class="bg-brand-alabaster p-6 rounded-twelve border border-brand-olive/10">
 <h4 class="font-bold mb-2">額頭紋</h4>
@@ -226,7 +227,7 @@ html
 </div>
 </div>
 </div>
- 側邊欄/黏性 CTA 
+<!-- Sidebar / Sticky CTA -->
 <div class="md:col-span-4 relative">
 <div class="sticky top-32 bg-brand-alabaster p-8 rounded-twelve shadow-sm border border-brand-olive/10">
 <h3 class="font-serif text-2xl mb-4">準備好刷新了嗎？</h3>
@@ -239,8 +240,8 @@ html
 </div>
 </div>
 </section>
- 結束：治療詳情 
- BEGIN: Treatment FAQs 
+<!-- END: Treatment Details -->
+<!-- BEGIN: Treatment FAQs -->
 <section class="max-w-3xl mx-auto px-6 py-12 mb-24">
 <h2 class="font-serif text-3xl text-center mb-12">Sculptra 常見問題解答</h2>
 <div class="space-y-0 border-t border-brand-olive/10">
@@ -249,17 +250,17 @@ html
 <span class="transition group-open:rotate-180">
 <svg 0="" 24="" 24”="" =“0="" class="“w-5" h-5”fill="“none”行程=“currentColor”viewbox"><path 7-7-7”行程線帽="“圓形”行程線加入=“圓形”行程寬度=“2”" 9l-7="" d="“M19"> <!-- 路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”-->  路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”&gt; <!-- 路徑線
 </span--></path></svg></span></summary>
-<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">大多數患者僅報告輕微、短暫的不適。我們使用最好的醫用級微針，治療只需幾分鐘。如果您很敏感，我們可以輕鬆地事先塗抹局部麻醉霜。</p>
+<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat"><span>我的臉會顯得冰冷或不自然嗎？ </span>
+<span class="transition group-open:rotate-180">
+<svg 0="" 24="" 24”="" =“0="" class="“w-5" h-5”fill="“none”行程=“currentColor”viewbox"><path 7-7-7”行程線帽="“圓形”行程線加入=“圓形”行程寬度=“2”" 9l-7="" d="“M19"> <!-- 路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”-->  路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”&gt; <!-- 路徑線
+</span--></path></svg></span></p>
 </details>
 <details class="group py-6 border-b border-brand-olive/10">
 <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none"><span>我的臉會顯得冰冷或不自然嗎？ </span>
 <span class="transition group-open:rotate-180">
 <svg 0="" 24="" 24”="" =“0="" class="“w-5" h-5”fill="“none”行程=“currentColor”viewbox"><path 7-7-7”行程線帽="“圓形”行程線加入=“圓形”行程寬度=“2”" 9l-7="" d="“M19"> <!-- 路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”-->  路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”&gt; <!-- 路徑線
 </span--></path></svg></span></summary>
-<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat"><span>術後照護是什麼？ </span>
-<span class="transition group-open:rotate-180">
-<svg 0="" 24="" 24”="" =“0="" class="“w-5" h-5”fill="“none”行程=“currentColor”viewbox"><path 7-7-7”行程線帽="“圓形”行程線加入=“圓形”行程寬度=“2”" 9l-7="" d="“M19"> <!-- 路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”-->  路徑線帽=“圓形”行程線加入=“圓形”行程寬度=“2”&gt; <!-- 路徑線
-</span--></path></svg></span></p>
+<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">絕對不是。 Marjan DaVinci 的理念是「藝術與精確的結合」。我們專注於施用精確、客製化的劑量，放鬆目標引起皺紋的肌肉，同時讓您保持美麗、自然的臉部表情。</p>
 </details>
 <details class="group py-6 border-b border-brand-olive/10">
 <summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none"><span>術後照護是什麼？ </span>
@@ -270,28 +271,28 @@ html
 </details>
 </div>
 </section>
- 結束：治療常見問題解答 
- 開始：頁腳 
+<!-- END: Treatment FAQs -->
+<!-- BEGIN: Footer -->
 <footer class="bg-white border-t border-brand-olive/10 pt-20 pb-10">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
- 地圖 
+<!-- Map -->
 <div class="w-full h-[400px] bg-brand-alabaster rounded-twelve overflow-hidden shadow-inner border border-brand-olive/10">
 <iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.53574709007!2d-123.135496!3d49.1666824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548675262bb08ead%3A0x7e76c905ed6b6a5d!2sMarjan%20DaVinci%20Laser%20%26%20Cosmetic%20Clinic!5e1!3m2!1sen!2sca!4v1773448067594!5m2!1sen!2sca" style="border:0; filter: grayscale(100%) invert(5%) contrast(85%);" width="100%"></iframe>
 </div>
- 聯絡方式 
+<!-- Contacts -->
 <div class="flex flex-col justify-center">
-<h2 class="font-serif text-4xl mb-8">地點</h2>
+<h2 class="font-serif text-4xl mb-8">聯絡我們</h2>
 <div class="space-y-6">
 <div>
 <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">地點</p>
 <p class="text-xl font-medium">查詢</p>
 </div>
 <div>
-<p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">診所及雷射：</p>
+<p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">查詢</p>
 <p class="text-xl font-medium"><a class="hover:text-brand-gold transition-colors" href="mailto:Hello@marjandavinci.com">你好@marjandavinci.com</a></p>
 <div class="mt-2 text-brand-deep/80">
-<p class="text-sm uppercase tracking-widest text-brand-gold font-bold">778-999-2416</p>
+<p class="text-sm uppercase tracking-widest text-brand-gold font-bold">診所及雷射：</p>
 <p class="text-xl font-medium"><a class="hover:text-brand-gold transition-colors" href="tel:7789992416">778-999-2416</a></p>
 </div>
 <div class="mt-2 text-brand-deep/80">
@@ -300,7 +301,7 @@ html
 </div>
 </div>
 <div class="flex space-x-6 pt-4">
-<a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.instagram.com/marjandavinci" rel="noopener" target="_blank">© 2024 Marjan DaVinci Laser &amp; 保留所有權利。化妝品。版權所有。</a>
+<a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.instagram.com/marjandavinci" rel="noopener" target="_blank">Instagram</a>
 <a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.facebook.com/marjanlaser" rel="noopener" target="_blank">Facebook</a>
 </div>
 </div>
@@ -309,7 +310,7 @@ html
 <div class="text-center pt-10 border-t border-brand-olive/5 text-xs text-brand-deep/40 tracking-widest uppercase">© 2024 Marjan DaVinci Laser &amp; 保留所有權利。化妝品。版權所有。</div>
 </div>
 </footer>
- 結束：頁腳 
+<!-- END: Footer -->
 <script>
     // Simple smooth scroll handler if needed
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

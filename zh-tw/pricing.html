@@ -154,7 +154,7 @@ html
 }</script>
 </head>
 <body class="bg-brand-alabaster font-manrope text-brand-deep overflow-x-hidden pt-32">
- 開始：頂部欄 
+<!-- BEGIN: Top Bar -->
 <div class="fixed top-0 w-full z-[60] bg-brand-olive text-white h-10 hidden md:flex items-center text-xs font-semibold tracking-wide">
 <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
 <div class="flex space-x-6 items-center">
@@ -162,8 +162,7 @@ html
 <span>Hello@marjandavinci.com</span></a>
 <a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7789992416"><span class="material-symbols-outlined text-sm">電話</span>
 <span>診所：778-999-2416</span></a>
-<a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7787074377"><span class="material-symbols-outlined text-sm">電話</span>
-<span>博士。 Sahih（注射劑）：778-707-4377</span></a>
+<a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7787074377">Sahih 博士（注射劑）：778-707-4377</a>
 <a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="https://maps.google.com/?q=6388+No.+3+Rd,+11th+Floor,+Suite+1110,+Richmond,+BC" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span>
 <span>6388 No. 3 Road, 11th Floor, Richmond BC</span></a>
 </div>
@@ -173,48 +172,50 @@ html
 </div>
 </div>
 </div>
- 結束：頂部欄 
- 開始：導航 
+<!-- END: Top Bar -->
+<!-- BEGIN: Navigation -->
 <nav class="fixed top-0 md:top-10 w-full z-50 glass-nav border-b border-brand-olive/10 transition-all duration-300">
 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 <div class="flex-shrink-0">
-<a href="home.html"><img alt="Marjan DaVinci Laser &amp; Cosmetic Logo" class="h-16 w-auto object-contain" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b181d278565a0df93b77ce.png"/></a>
+<a href="home.html">服務</a>
 </div>
 <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest text-brand-deep/80">
-<a class="hover:text-brand-olive transition-colors" href="home.html#services">服務</a>
+<a class="hover:text-brand-olive transition-colors" href="home.html#services">關於</a>
 <a class="hover:text-brand-olive transition-colors" href="home.html#about">關於</a>
-<a class="hover:text-brand-olive transition-colors" href="home.html#team">團隊</a>
-<a class="hover:text-brand-olive transition-colors" href="home.html#faq">治療方法</a>
+<a class="hover:text-brand-olive transition-colors" href="home.html#team">常問問題</a>
+<a class="hover:text-brand-olive transition-colors" href="home.html#faq">常問問題</a>
 </div>
 <div class="flex items-center">
-<div class="flex items-center space-x-2 text-xs font-bold tracking-widest text-brand-deep/80 mr-4 md:mr-6" id="language-switcher">
-<a class="hover:text-brand-olive transition-colors" href="../pricing.html">EN</a>
+
+
+<div class="flex items-center space-x-3 text-sm font-bold tracking-widest text-brand-deep/80 mr-4 md:mr-6" id="language-switcher" translate="no">
+<a class="hover:text-brand-olive transition-colors font-sans" href="/pricing.html">EN</a>
 <span class="text-brand-olive/30">|</span>
-<a class="hover:text-brand-olive transition-colors font-sans" href="../zh-cn/pricing.html">简</a>
+<a class="hover:text-brand-olive transition-colors font-sans" href="/zh-cn/pricing.html">简</a>
 <span class="text-brand-olive/30">|</span>
-<a class="hover:text-brand-olive transition-colors font-sans" href="pricing.html">繁</a>
+<a class="hover:text-brand-olive transition-colors font-sans" href="/zh-tw/pricing.html">繁</a>
 </div>
 <div class="flex-shrink-0">
 <a class="bg-brand-olive text-white px-8 py-3 rounded-twelve font-semibold transition-all duration-300 hover:bg-brand-gold shadow-sm" href="https://davincicosmetics.janeapp.com/" rel="noopener" target="_blank">預約</a>
 </div></div>
 </div>
 </nav>
- 結束：導航 
- 結束：頁眉 
+<!-- END: Navigation -->
+<!-- BEGIN: Page Header -->
 <section class="max-w-7xl mx-auto px-6 py-12 text-center animate-fade-in">
 <h1 class="font-serif text-5xl md:text-6xl mb-4 leading-tight">治療價格表</h1>
 <p class="text-xl text-brand-gold font-serif italic mb-8">2025</p>
 <a class="inline-block bg-brand-deep text-white px-8 py-4 rounded-twelve font-bold hover:bg-brand-olive transition-colors shadow-lg" href="https://davincicosmetics.janeapp.com/" rel="noopener" target="_blank">預約諮詢</a>
 </section>
- 結束：頁眉 
- 超音波治療 
+<!-- END: Page Header -->
+<!-- BEGIN: Pricing Grid -->
 <section class="max-w-7xl mx-auto px-6 py-12 mb-24 animate-fade-in relative z-10">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
- 超音波治療 
+<!-- ULTHERAPY -->
 <div class="pricing-card">
-<h3>超音波刀</h3>
+<h3>Ultherapy <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">超声刀</span></h3>
 <div class="price-row">
-<span class="price-item">全臉+頸部</span>
+<span class="price-item">Full Face + Neck <span class="text-xs text-brand-deep/50 ml-1 block">全脸 + 颈部</span></span>
 <span class="price-value">$4200</span>
 </div>
 <div class="price-row">
@@ -223,7 +224,7 @@ html
 </div>
 <div class="price-row">
 <span class="price-item">上臉 <span class="text-xs text-brand-deep/50 ml-1 block">上臉</span></span>
-<span class="price-value">下臉 <span class="text-xs text-brand-deep/50 ml-1 block">下臉</span></span>
+<span class="price-value">下臉</span>
 </div>
 <div class="price-row">
 <span class="price-item">下臉 <span class="text-xs text-brand-deep/50 ml-1 block">下臉</span></span>
@@ -234,7 +235,7 @@ html
 <span class="price-value">1200 美元</span>
 </div>
 </div>
- 注射劑 
+<!-- INJECTABLES -->
 <div class="pricing-card">
 <h3>注射 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">注射</span></h3>
 <div class="price-row">
@@ -251,65 +252,65 @@ html
 </div>
 <div class="price-row">
 <span class="price-item">瑞德喜</span>
-<span class="price-value">$850 <span class="text-sm font-sans text-brand-deep/50">/ syringe</span></span>
+<span class="price-value">$850 <span class="text-sm font-sans text-brand-deep/50">/注射器</span></span>
 </div>
 <div class="price-row">
-<span class="price-item">Under Eye Filler <span class="text-xs text-brand-deep/50 ml-1">眼下填充物</span></span>
-<span class="price-value">$850 <span class="text-sm font-sans text-brand-deep/50">/ syringe</span></span>
+<span class="price-item">眼部填充<span class="text-xs text-brand-deep/50 ml-1">眼下填充物</span></span>
+<span class="price-value">$850 <span class="text-sm font-sans text-brand-deep/50">/注射器</span></span>
 </div>
 <div class="price-row">
-<span class="price-item">Nose Filler <span class="text-xs text-brand-deep/50 ml-1">鼻部填充物</span></span>
+<span class="price-item">鼻部填充物<span class="text-xs text-brand-deep/50 ml-1">鼻部填充物</span></span>
 <span class="price-value">$850 <span class="text-sm font-sans text-brand-deep/50">/ 會議</span><div class="text-[0.6rem] text-right font-sans lowercase text-brand-deep/50">（1次免費補漆）</div></span>
 </div>
 <div class="price-row mt-4 bg-brand-alabaster rounded-lg p-3">
 <span class="price-item">埋線提升<span class="text-xs text-brand-deep/50 ml-1">線雕</span></span>
 <div class="flex flex-col items-end space-y-2">
 <div class="flex justify-between w-40">
-<span class="text-[0.65rem] text-brand-deep/70">Full Face / 全脸</span><span class="price-value text-sm">$4800</span>
+<span class="text-[0.65rem] text-brand-deep/70">全臉/全臉</span><span class="price-value text-sm">$4800</span>
 </div>
 <div class="flex justify-between w-40">
-<span class="text-[0.65rem] text-brand-deep/70">上臉/上臉</span><span class="price-value text-sm">$2400</span>
+<span class="text-[0.65rem] text-brand-deep/70">$2400</span><span class="price-value text-sm">$2400</span>
 </div>
 <div class="flex justify-between w-40">
-<span class="text-[0.65rem] text-brand-deep/70">Lower Face / 下脸</span><span class="price-value text-sm">$2400</span>
+<span class="text-[0.65rem] text-brand-deep/70">下臉/下臉</span><span class="price-value text-sm">$2400</span>
 </div>
 </div>
 </div>
 <div class="price-row mt-4 mt-2">
 <span class="price-item">酵素<span class="text-xs text-brand-deep/50 ml-1">填充物質溶解酶</span></span>
-<span class="price-value">120 美元</span>
+<span class="price-value">Morpheus 8 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">莫菲斯8</span></span>
 </div>
 </div>
- 睡眠8號 
+<!-- MORPHEUS 8 -->
 <div class="pricing-card">
-<h3>Morpheus 8 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">莫菲斯8</span></h3>
-<div class="multi-price-header"><span class="w-16 text-center">x1</span><span class="w-16 text-center">頸部 <span class="text-xs text-brand-deep/50 ml-1 block">頸部</span></span></div>
+<h3>莫菲斯8</h3>
+<div class="multi-price-header"><span class="w-16 text-center">x1</span><span class="w-16 text-center">x3</span></div>
 <div class="price-row">
-<span class="price-item">全臉+頸部</span>
-<div class="flex gap-2 text-right"><span class="price-value w-16">1200 美元</span><span class="price-value w-16">頸部 <span class="text-xs text-brand-deep/50 ml-1 block">頸部</span></span></div>
+<span class="price-item">Full Face + Neck <span class="text-xs text-brand-deep/50 ml-1 block">全脸 + 颈部</span></span>
+<div class="flex gap-2 text-right"><span class="price-value w-16">1200 美元</span><span class="price-value w-16">$2700</span></div>
 </div>
 <div class="price-row">
 <span class="price-item">頸部 <span class="text-xs text-brand-deep/50 ml-1 block">頸部</span></span>
-<div class="flex gap-2 text-right"><span class="price-value w-16">600 美元</span><span class="price-value w-16">1500 美元</span></div>
+<div class="flex gap-2 text-right"><span class="price-value w-16">600 美元</span><span class="price-value w-16">眼下 <span class="text-xs text-brand-deep/50 ml-1 block">眼下</span></span></div>
 </div>
 <div class="price-row">
-<span class="price-item">500 美元</span>
-<div class="flex gap-2 text-right"><span class="price-value w-16">500 美元</span><span class="price-value w-16">1200 美元</span></div>
+<span class="price-item">眼下 <span class="text-xs text-brand-deep/50 ml-1 block">眼下</span></span>
+<div class="flex gap-2 text-right"><span class="price-value w-16">嘴巴周圍 <span class="text-xs text-brand-deep/50 ml-1 block">嘴部周圍</span></span><span class="price-value w-16">1200 美元</span></div>
 </div>
 <div class="price-row">
 <span class="price-item">嘴巴周圍 <span class="text-xs text-brand-deep/50 ml-1 block">嘴部周圍</span></span>
-<div class="flex gap-2 text-right"><span class="price-value w-16">500 美元</span><span class="price-value w-16">1200 美元</span></div>
+<div class="flex gap-2 text-right"><span class="price-value w-16">嘴巴周圍 <span class="text-xs text-brand-deep/50 ml-1 block">嘴部周圍</span></span><span class="price-value w-16">1200 美元</span></div>
 </div>
 <div class="price-row">
 <span class="price-item">手臂 <span class="text-xs text-brand-deep/50 ml-1 block">手臂</span></span>
-<div class="flex gap-2 text-right"><span class="price-value w-16">600 美元</span><span class="price-value w-16">1500 美元</span></div>
+<div class="flex gap-2 text-right"><span class="price-value w-16">600 美元</span><span class="price-value w-16">眼下 <span class="text-xs text-brand-deep/50 ml-1 block">眼下</span></span></div>
 </div>
 <div class="price-row">
 <span class="price-item">腿或腹部 <span class="text-xs text-brand-deep/50 ml-1 block">枕頭或腹部</span></span>
-<div class="flex gap-2 text-right"><span class="price-value w-16">800 美元</span><span class="price-value w-16">2100 美元</span></div>
+<div class="flex gap-2 text-right"><span class="price-value w-16">800 美元</span><span class="price-value w-16">Accutite <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">艾克提</span></span></div>
 </div>
 </div>
- 準確 
+<!-- ACCUTITE -->
 <div class="pricing-card h-fit">
 <h3>Accutite <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">艾克提</span></h3>
 <div class="multi-price-header mb-1"><span class="w-16 text-center">x1</span><span class="w-20 text-center">添加1個M8</span></div>
@@ -322,19 +323,19 @@ html
 <div class="flex gap-2 text-right"><span class="price-value w-16">$4200</span><span class="price-value w-20">600 美元</span></div>
 </div>
 </div>
- 水光臉部護理 
+<!-- HYDRAFACIALS -->
 <div class="pricing-card h-fit">
 <h3>水光療法 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">水光療法</span></h3>
 <div class="price-row">
 <span class="price-item">簽名<span class="text-xs text-brand-deep/50 ml-1">簽名版</span></span>
-<span class="price-value">豪華版 <span class="text-xs text-brand-deep/50 ml-1">豪華版</span></span>
+<span class="price-value">185 美元</span>
 </div>
 <div class="price-row">
 <span class="price-item">豪華版 <span class="text-xs text-brand-deep/50 ml-1">豪華版</span></span>
 <span class="price-value">$285</span>
 </div>
 </div>
- 靜脈注射 
+<!-- IV DRIPS -->
 <div class="pricing-card">
 <h3>靜脈注射 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">靜脈注射</span></h3>
 <div class="price-row">
@@ -362,7 +363,7 @@ html
 <span class="price-value">$245</span>
 </div>
 <div class="price-row">
-<span class="price-item">鐵注射液（一鐵1000mg）</span>
+<span class="price-item">鐵劑<span class="text-xs text-brand-deep/50 normal-case block">鐵注射（單鐵1000mg）</span></span>
 <span class="price-value">900 美元</span>
 </div>
 <div class="price-row">
@@ -370,7 +371,7 @@ html
 <span class="price-value">450 美元</span>
 </div>
 </div>
- 微型針 
+<!-- MICRONEEDLING -->
 <div class="pricing-card h-fit">
 <h3>微針<span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">微針療法</span></h3>
 <div class="price-row">
@@ -379,18 +380,18 @@ html
 </div>
 <div class="price-row">
 <span class="price-item">PRP <span class="text-xs text-brand-deep/50 ml-1">富張力繃</span></span>
-<span class="price-value text-sm">$590 <span class="text-brand-deep/50 font-sans italic text-xs">（+200 美元頸部）</span></span>
+<span class="price-value text-sm">（+200 美元頸部）</span>
 </div>
 <div class="price-row">
 <span class="price-item">PDRN（鮭魚DNA）<span class="text-xs text-brand-deep/50 ml-1">鮭魚DNA</span></span>
-<span class="price-value">/ 發送</span>
+<span class="price-value">$650 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
 </div>
 <div class="price-row">
 <span class="price-item">外泌體 <span class="text-xs text-brand-deep/50 ml-1">外泌體</span></span>
-<span class="price-value">/ 發送</span>
+<span class="price-value">$650 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
 </div>
 </div>
- 富血小板血漿 
+<!-- PRP -->
 <div class="pricing-card h-fit">
 <h3>PRP <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">富貨運車載</span></h3>
 <div class="price-row">
@@ -418,7 +419,7 @@ html
 </div>
 </div>
 </div>
- 脂肪溶解 
+<!-- FAT DISSOLVE -->
 <div class="pricing-card h-fit">
 <h3>脫氧膽酸（溶脂）<span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">脫氧膽酸（溶脂）</span></h3>
 <div class="price-row">
@@ -427,35 +428,35 @@ html
 </div>
 <div class="price-row">
 <span class="price-item">胸罩脂肪 <span class="text-xs text-brand-deep/50 ml-1">無菌脂肪</span></span>
-<span class="price-value">背部凸起 <span class="text-xs text-brand-deep/50 ml-1">廢水</span></span>
+<span class="price-value">$750 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
+</div>
+<div class="price-row">
+<span class="price-item">背部凸起 <span class="text-xs text-brand-deep/50 ml-1">廢水</span></span>
+<span class="price-value">$750 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
 </div>
 <div class="price-row">
 <span class="price-item">Belly Pocket <span class="text-xs text-brand-deep/50 ml-1">腹部脂肪支架</span></span>
-<span class="price-value">背部凸起 <span class="text-xs text-brand-deep/50 ml-1">廢水</span></span>
-</div>
-<div class="price-row">
-<span class="price-item">Belly Pocket <span class="text-xs text-brand-deep/50 ml-1">腹部脂肪支架</span></span>
-<span class="price-value">背部凸起 <span class="text-xs text-brand-deep/50 ml-1">廢水</span></span>
+<span class="price-value">$750 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
 </div>
 </div>
- 中胚層療法 
+<!-- MESOTHERAPY -->
 <div class="pricing-card h-fit">
-<h3>粉紅色玻璃</h3>
+<h3>中胚層療法<span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">水光針</span></h3>
 <div class="price-row">
 <span class="price-item">PRP <span class="text-xs text-brand-deep/50 ml-1">富張力繃</span></span>
-<span class="price-value">/ 發送</span>
+<span class="price-value">$650 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
+</div>
+<div class="price-row">
+<span class="price-item">粉紅夜光 <span class="text-xs text-brand-deep/50 ml-1">粉紅玻璃</span></span>
+<span class="price-value">$650 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
 </div>
 <div class="price-row">
 <span class="price-item">玻尿酸<span class="text-xs text-brand-deep/50 ml-1 block">玻尿酸皮膚增強劑</span></span>
-<span class="price-value">/ 發送</span>
-</div>
-<div class="price-row">
-<span class="price-item">玻尿酸<span class="text-xs text-brand-deep/50 ml-1 block">玻尿酸皮膚增強劑</span></span>
-<span class="price-value">/ 發送</span>
+<span class="price-value">$650 <span class="text-sm text-brand-deep/50 font-sans">/tx</span></span>
 </div>
 </div>
 </div>
- 女性雷射除毛 - 全寬度 
+<!-- WOMEN LASER HAIR REMOVAL - FULL WIDTH -->
 <div class="pricing-card mt-8">
 <h3>女性雷射除毛（單次會話）<span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">女性雷射除毛（單次會話）</span></h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12">
@@ -470,7 +471,7 @@ html
 <span class="price-item">全腿 <span class="text-xs text-brand-deep/50 ml-1">全腿</span></span><span class="price-value">$350</span>
 </div>
 <div class="price-row">
-<span class="price-item">大腿 <span class="text-xs text-brand-deep/50 ml-1"> 大腿</span></span><span class="price-value">豪華版 <span class="text-xs text-brand-deep/50 ml-1">豪華版</span></span>
+<span class="price-item">大腿 <span class="text-xs text-brand-deep/50 ml-1"> 大腿</span></span><span class="price-value">185 美元</span>
 </div>
 <div class="price-row">
 <span class="price-item">小腿 <span class="text-xs text-brand-deep/50 ml-1">小腿</span></span><span class="price-value">$180</span>
@@ -502,25 +503,25 @@ html
 <span class="price-item">全背<span class="text-xs text-brand-deep/50 ml-1">全背</span></span><span class="price-value">220 美元</span>
 </div>
 <div class="price-row">
-<span class="price-item">下後方</span><span class="price-value">$180</span>
+<span class="price-item">下背部 <span class="text-xs text-brand-deep/50 ml-1">下背部</span></span><span class="price-value">$180</span>
 </div>
 <div class="price-row">
 <span class="price-item">全前 <span class="text-xs text-brand-deep/50 ml-1">全前部</span></span><span class="price-value">$180</span>
 </div>
 <div class="price-row">
-<span class="price-item">腹部 <span class="text-xs text-brand-deep/50 ml-1">腹部</span></span><span class="price-value">120 美元</span>
+<span class="price-item">腹部 <span class="text-xs text-brand-deep/50 ml-1">腹部</span></span><span class="price-value">Morpheus 8 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">莫菲斯8</span></span>
 </div>
 <div class="price-row">
 <span class="price-item">巴西式 + 腋下 <span class="text-xs text-brand-deep/50 ml-1 block">巴西式除毛 + 腋下</span></span><span class="price-value">280 美元</span>
 </div>
 <div class="price-row">
-<span class="price-item">胸部、乳頭、肚臍 <span class="text-xs text-brand-deep/50 ml-1 block">雅典，乳頭，肚臍</span></span><span class="price-value">指關節 + 腳趾 <span class="text-xs text-brand-deep/50 ml-1">指關節 + 腳趾</span></span>
+<span class="price-item">胸部、乳頭、肚臍 <span class="text-xs text-brand-deep/50 ml-1 block">雅典，乳頭，肚臍</span></span><span class="price-value">100 美元</span>
 </div>
 <div class="price-row">
 <span class="price-item">指關節 + 腳趾 <span class="text-xs text-brand-deep/50 ml-1">指關節 + 腳趾</span></span><span class="price-value">50 美元</span>
 </div>
 <div class="price-row">
-<span class="price-item">頸後<span class="text-xs text-brand-deep/50 ml-1">頸部後方</span></span><span class="price-value">120 美元</span>
+<span class="price-item">頸後<span class="text-xs text-brand-deep/50 ml-1">頸部後方</span></span><span class="price-value">Morpheus 8 <span class="text-sm font-sans normal-case text-brand-deep/50 block mt-1">莫菲斯8</span></span>
 </div>
 <div class="price-row">
 <span class="price-item">上唇下巴 <span class="text-xs text-brand-deep/50 ml-1">上唇和下巴</span></span><span class="price-value">80 美元</span>
@@ -532,8 +533,8 @@ html
 </div>
 </div>
 </section>
- 結束：定價網格 
- 開始：頁腳 
+<!-- END: Pricing Grid -->
+<!-- BEGIN: Footer -->
 <footer class="bg-white border-t border-brand-olive/10 pt-20 pb-10">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
@@ -541,17 +542,17 @@ html
 <iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.53574709007!2d-123.135496!3d49.1666824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548675262bb08ead%3A0x7e76c905ed6b6a5d!2sMarjan%20DaVinci%20Laser%20%26%20Cosmetic%20Clinic!5e1!3m2!1sen!2sca!4v1773448067594!5m2!1sen!2sca" style="border:0; filter: grayscale(100%) invert(5%) contrast(85%);" width="100%"></iframe>
 </div>
 <div class="flex flex-col justify-center">
-<h2 class="font-serif text-4xl mb-8">地點</h2>
+<h2 class="font-serif text-4xl mb-8">聯絡我們</h2>
 <div class="space-y-6">
 <div>
 <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">地點</p>
 <p class="text-xl font-medium">查詢</p>
 </div>
 <div>
-<p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">診所及雷射：</p>
+<p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">查詢</p>
 <p class="text-xl font-medium"><a class="hover:text-brand-gold transition-colors" href="mailto:Hello@marjandavinci.com">你好@marjandavinci.com</a></p>
 <div class="mt-2 text-brand-deep/80">
-<p class="text-sm uppercase tracking-widest text-brand-gold font-bold">778-999-2416</p>
+<p class="text-sm uppercase tracking-widest text-brand-gold font-bold">診所及雷射：</p>
 <p class="text-xl font-medium"><a class="hover:text-brand-gold transition-colors" href="tel:7789992416">778-999-2416</a></p>
 </div>
 <div class="mt-2 text-brand-deep/80">
@@ -565,7 +566,7 @@ html
 <div class="text-center pt-10 border-t border-brand-olive/5 text-xs text-brand-deep/40 tracking-widest uppercase">© 2024 Marjan DaVinci Laser &amp; 保留所有權利。化妝品。版權所有。</div>
 </div>
 </footer>
- 結束：頁腳 
+<!-- END: Footer -->
 <script data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69863e437cd1e63a788d2e56" src="https://widgets.leadconnectorhq.com/loader.js"></script>
 </body>
 </html>

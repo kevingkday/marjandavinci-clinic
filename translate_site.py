@@ -1,6 +1,6 @@
 import os
 import glob
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 from deep_translator import GoogleTranslator
 from concurrent.futures import ThreadPoolExecutor
 
@@ -56,7 +56,7 @@ for lang_dir, translator in LANGS.items():
         # 2. Extract texts to translate
         def is_translatable(tag):
             if tag.name not in BLOCK_TAGS and tag.name not in ['div', 'span']: return False
-            texts = [s for s in tag.find_all(string=True, recursive=False) if s.strip()]
+            texts = [s for s in tag.find_all(string=True, recursive=False) if s.strip() and not isinstance(s, Comment)]
             if not texts and tag.name not in BLOCK_TAGS: return False
             for child in tag.children:
                 if child.name in BLOCK_TAGS or child.name == 'div': return False
@@ -74,6 +74,7 @@ for lang_dir, translator in LANGS.items():
 
         loose_texts = []
         for element in soup.find_all(string=True):
+            if isinstance(element, Comment): continue
             if element.parent.name in ['style', 'script', 'head', 'title', 'meta']: continue
             text = element.strip()
             if text and len(text) > 1 and not text.isnumeric():

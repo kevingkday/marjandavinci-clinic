@@ -165,7 +165,7 @@ html
 }</script>
 </head>
 <body class="bg-brand-alabaster font-manrope text-brand-deep overflow-x-hidden">
- 開始：頂部欄 
+<!-- BEGIN: Top Bar -->
 <div class="fixed top-0 w-full z-[60] bg-brand-olive text-white h-10 hidden md:flex items-center text-xs font-semibold tracking-wide">
 <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
 <div class="flex space-x-6 items-center">
@@ -173,8 +173,7 @@ html
 <span>Hello@marjandavinci.com</span></a>
 <a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7789992416"><span class="material-symbols-outlined text-sm">電話</span>
 <span>診所：778-999-2416</span></a>
-<a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7787074377"><span class="material-symbols-outlined text-sm">電話</span>
-<span>博士。 Sahih（注射劑）：778-707-4377</span></a>
+<a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="tel:7787074377">Sahih 博士（注射劑）：778-707-4377</a>
 <a class="flex items-center space-x-2 hover:text-brand-gold transition-colors" href="https://maps.google.com/?q=6388+No.+3+Rd,+11th+Floor,+Suite+1110,+Richmond,+BC" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span>
 <span>6388 No. 3 Road, 11th Floor, Richmond BC</span></a>
 </div>
@@ -188,50 +187,53 @@ html
 </div>
 </div>
 </div>
- 結束：頂部欄 
- 開始：導航 
+<!-- END: Top Bar -->
+<!-- BEGIN: Navigation -->
 <nav class="fixed top-0 md:top-10 w-full z-50 glass-nav border-b border-brand-olive/10 transition-all duration-300">
 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
- 標識 
+<!-- Logo -->
 <div class="flex-shrink-0">
-<a href="#"><img alt="Marjan DaVinci Laser &amp; Cosmetic Logo" class="h-16 w-auto object-contain" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b181d278565a0df93b77ce.png"/></a>
+<a href="#">服務</a>
 </div>
- 中心連結 
+<!-- Center Links -->
 <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest text-brand-deep/80">
-<a class="hover:text-brand-olive transition-colors" href="#services">服務</a>
+<a class="hover:text-brand-olive transition-colors" href="#services">關於</a>
 <a class="hover:text-brand-olive transition-colors" href="#about">關於</a>
-<a class="hover:text-brand-olive transition-colors" href="#team">團隊</a>
-<a class="hover:text-brand-olive transition-colors" href="#faq">治療方法</a>
+<a class="hover:text-brand-olive transition-colors" href="#team">常問問題</a>
+<a class="hover:text-brand-olive transition-colors" href="#faq">常問問題</a>
 </div>
- 動作按鈕 
+<!-- Action Button -->
 <div class="flex items-center">
-<div class="flex items-center space-x-2 text-xs font-bold tracking-widest text-brand-deep/80 mr-4 md:mr-6" id="language-switcher">
-<a class="hover:text-brand-olive transition-colors" href="../home.html">EN</a>
+
+
+<div class="flex items-center space-x-3 text-sm font-bold tracking-widest text-brand-deep/80 mr-4 md:mr-6" id="language-switcher" translate="no">
+<a class="hover:text-brand-olive transition-colors font-sans" href="/home.html">EN</a>
 <span class="text-brand-olive/30">|</span>
-<a class="hover:text-brand-olive transition-colors font-sans" href="../zh-cn/home.html">简</a>
+<a class="hover:text-brand-olive transition-colors font-sans" href="/zh-cn/home.html">简</a>
 <span class="text-brand-olive/30">|</span>
-<a class="hover:text-brand-olive transition-colors font-sans" href="home.html">繁</a>
+<a class="hover:text-brand-olive transition-colors font-sans" href="/zh-tw/home.html">繁</a>
 </div>
 <div class="flex-shrink-0">
 <a class="bg-brand-olive text-white px-8 py-3 rounded-twelve font-semibold transition-all duration-300 hover:bg-brand-gold shadow-sm" href="https://davincicosmetics.janeapp.com/" rel="noopener" target="_blank">預約</a>
 </div></div>
 </div>
 </nav>
- 結束：導航 
- 開始：英雄部分 
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
 <section class="min-h-[90vh] flex flex-col md:flex-row items-stretch">
- 左欄 
+<!-- Left Column -->
 <div class="w-full md:w-2/5 flex items-center pl-[max(1.5rem,calc(50vw-40rem+1.5rem))] pr-8 md:pr-20 py-20 bg-brand-alabaster animate-fade-in">
 <div class="max-w-xl">
 <span class="inline-block py-1 px-3 bg-brand-olive/10 text-brand-olive rounded-full text-xs font-bold uppercase tracking-widest mb-6">優質美學</span>
 <h1 class="font-serif text-5xl md:text-7xl leading-none mb-8">藝術與精準結合<br/><span class="italic text-brand-gold">醫療精度</span></h1>
-<p class="text-lg text-brand-deep/70 mb-10 leading-relaxed font-montserrat">實證護理</p>
+<p class="text-lg text-brand-deep/70 mb-10 leading-relaxed font-montserrat">透過先進的雷射技術和專家主導的注射治療提升自然之美。經驗
+          Marjan DaVinci 的皮膚健康科學。</p>
 <div class="flex flex-wrap gap-4">
 <a class="bg-brand-deep text-white px-8 py-4 rounded-twelve font-bold hover:bg-brand-olive transition-colors inline-block" href="https://davincicosmetics.janeapp.com/" rel="noopener" target="_blank">預約</a>
 </div>
 </div>
 </div>
- 右欄：高級時裝蒙太奇視頻 
+<!-- Right Column: High Fashion Montage Video -->
 <div class="w-full md:w-3/5 min-h-[500px] relative">
 <video autoplay="" class="absolute inset-0 w-full h-full object-cover" loop="" muted="" playsinline="">
 <source src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b2c267005051f7b82385fa.mp4" type="video/mp4"/>
@@ -239,8 +241,8 @@ html
       </video>
 </div>
 </section>
- 結束：英雄部分 
- 開始：支柱酒吧 
+<!-- END: Hero Section -->
+<!-- BEGIN: The Pillars Bar -->
 <section class="bg-white py-12 border-y border-brand-olive/5">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -248,7 +250,7 @@ html
 <svg class="w-8 h-8 text-brand-gold mb-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
 </svg>
-<h3 class="font-bold text-sm uppercase tracking-widest">先進技術</h3>
+<h3 class="font-bold text-sm uppercase tracking-widest">實證護理</h3>
 </div>
 <div class="py-4 flex flex-col items-center">
 <svg class="w-8 h-8 text-brand-gold mb-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
@@ -265,8 +267,8 @@ html
 </div>
 </div>
 </section>
- 結束：Pillars 酒吧 
- 開始：關於我們 
+<!-- END: The Pillars Bar -->
+<!-- BEGIN: About Us -->
 <section class="py-24 px-6 max-w-7xl mx-auto overflow-hidden" id="about">
 <div class="flex flex-col md:flex-row items-center gap-16">
 <div class="w-full md:w-1/2 relative">
@@ -280,7 +282,8 @@ html
 <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-4">我們的理念</h4>
 <h2 class="font-serif text-4xl mb-6 leading-tight">MarjanDaVinci 雷射與雷射化妝品</h2>
 <div class="space-y-6 text-brand-deep/70 text-lg leading-relaxed font-montserrat mb-8">
-<p>醫生指導注射</p>
+<p>我們是一家位於不列顛哥倫比亞省里士滿的醫生指導的美容診所和雷射皮膚診所。我們有高度
+            經驗豐富的醫生和認證技術人員擁有十多年的綜合經驗。</p>
 </div>
 <div class="space-y-6 mb-10">
 <div class="flex items-start space-x-4">
@@ -299,10 +302,8 @@ html
 <div class="w-2 h-2 bg-brand-gold rounded-full"></div>
 </div>
 <div>
-<p class="font-bold text-brand-deep">我們的無痛雷射除毛將讓您從日常生活中解放出來
-                剃鬚。</p>
-<p class="text-brand-deep/70 text-sm">我們的無痛雷射除毛將讓您從日常生活中解放出來
-                剃鬚。</p>
+<p class="font-bold text-brand-deep">無痛雷射除毛</p>
+<p class="text-brand-deep/70 text-sm">在雷射和注射療法方面擁有超過 14 年的專業知識。</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -322,7 +323,7 @@ html
 <section class="py-24 bg-white" id="why-choose-us">
 <div class="max-w-7xl mx-auto px-6">
 <div class="flex flex-col lg:flex-row gap-16 items-start">
- 圖片欄目 
+<!-- Image Column -->
 <div class="w-full lg:w-1/2 lg:sticky lg:top-24">
 <div class="relative">
 <img alt="Marjan Madani &amp; Dr. Vahid Sahiholnasab (Sahih)" class="rounded-twelve shadow-xl w-full object-cover" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab98e041da22719abeb9.jpg"/>
@@ -330,7 +331,7 @@ html
               薩希霍爾納薩布 (Sahih)</p>
 <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-gold/10 -z-10 rounded-full"></div>
 </div>
- 價值道具 
+<!-- Value Props -->
 <div class="mt-12 space-y-8">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-brand-olive text-3xl">精密製造</span>
@@ -358,7 +359,7 @@ html
 </div>
 </div>
 </div>
- 內容欄目 
+<!-- Content Column -->
 <div class="w-full lg:w-1/2">
 <h4 class="text-brand-gold font-bold uppercase tracking-widest text-sm mb-4">為什麼選擇我們</h4>
 <h2 class="font-serif text-4xl md:text-5xl mb-6 leading-tight">認識 Marjan DaVinci 背後的卓越團隊
@@ -368,10 +369,15 @@ html
               美容醫學和其他注射治療方面的專業知識。他致力於提供頂級的
               服務，確保每位患者得到優質照護。 Sahih 博士的熱情在他的
               最喜歡的治療方法是隆鼻。</p>
-<p>高素質醫師</p>
-<p>高素質醫師</p>
+<p>Marjan 自 2008 年以來對醫療雷射充滿熱情，帶來了豐富的經驗和個人
+              觸摸診所。她與客戶的旅程和尖端技術激勵她建立了自己的公司
+              自己的實踐。 Marjan 了解醫用雷射對自信和自尊的深遠影響，這
+              激勵著她的奉獻精神。</p>
+<p>Sahih 博士和 Marjan 共同領導 Marjan DaVinci 雷射和美容診所，他們的共同願景是：
+              卓越和客戶滿意度，確保每個人透過創新感受到最好的狀態
+              治療和富有同情心的護理。</p>
 </div>
- 醫生詳情 
+<!-- Physician Details -->
 <div class="bg-brand-alabaster p-8 rounded-twelve border border-brand-olive/10">
 <div class="flex items-center gap-4 mb-6">
 <div class="bg-brand-olive/10 p-3 rounded-full">
@@ -379,24 +385,24 @@ html
 </div>
 <h3 class="font-serif text-2xl">高素質醫師</h3>
 </div>
-<p class="text-sm text-brand-deep/60 mb-6"><span class="text-brand-gold">•</span> 皇家内科医学院
-                加拿大外科醫生</p>
+<p class="text-sm text-brand-deep/60 mb-6">Sahih 博士是以下專業協會的成員
+              和許可機構：</p>
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-brand-deep/80">
 <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 英國皇家內科醫學院
                 加拿大外科醫生</li>
 <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 英國皇家學院院士
                 醫師與加拿大醫學外科醫生</li>
 <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 美國委員會外交官
-                老年醫學</li>
+                內科</li>
 <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 美國委員會外交官
                 老年醫學</li>
+<li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 美國美容學院
+                醫學</li>
 <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 歐洲化妝品協會
                 和美容皮膚科</li>
-<li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 内科医学院
+<li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 內科醫學院
                 BC省的外科醫生</li>
-<li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 内科医学院
-                AB 的外科醫生</li>
-<li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 内科医学院
+<li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 內科醫學院
                 AB 的外科醫生</li>
 <li class="flex items-start gap-2"><span class="text-brand-gold">•</span> 不列顛哥倫比亞省醫療中心
                 協會</li>
@@ -408,7 +414,7 @@ html
 <span class="material-symbols-outlined text-brand-olive mt-1">稱呼</span>
 <div>
 <p class="font-bold text-brand-deep text-sm mb-1">注射劑直達線</p>
-<p class="text-brand-deep/70 text-sm">結束：關於我們 <a class="text-brand-olive font-bold hover:underline" href="tel:7787074377">778-707-4377</a>.</p>
+<p class="text-brand-deep/70 text-sm">如需肉毒桿菌、填充劑和其他注射諮詢，請直接致電 Sahih 醫生： <a class="text-brand-olive font-bold hover:underline" href="tel:7787074377">778-707-4377</a>.</p>
 </div>
 </div>
 </div>
@@ -416,8 +422,8 @@ html
 </div>
 </div>
 </section>
- 結束：關於我們 
- 開始：互動式服務網格 
+<!-- END: About Us -->
+<!-- BEGIN: Interactive Service Grid -->
 <section class="py-24 bg-white" id="services">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
@@ -425,25 +431,25 @@ html
 <p class="text-brand-deep/60 max-w-2xl mx-auto">了解我們經過臨床驗證的一系列服務，旨在
           變革性而又自然的結果。</p>
 </div>
-<div> 21張治療卡網格 
+<div><!-- 21 Treatment Cards Grid -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
- 卡1：肉毒桿菌 
+<!-- Card 1: Botox -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="botox.html">
 <img alt="Botox" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b6e0cfeaf0818ad580706d.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
 <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">肉毒桿菌</h3>
-<p class="text-white/70 text-xs">鼻子填充物</p>
+<p class="text-white/70 text-xs">精準抗皺護理，打造清爽、年輕的外觀。</p>
 </div>
 </a>
- 卡2：運動障礙 
+<!-- Card 2: Dysport -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="dysport.html">
 <img alt="Dysport" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_dysport_1773167843113.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
-<h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">一種速效注射劑，可撫平中度至重度皺眉紋。</h3>
+<h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">運動障礙</h3>
 <p class="text-white/70 text-xs">一種速效注射劑，可撫平中度至重度皺眉紋。</p>
 </div>
 </a>
- 卡3：隆鼻 
+<!-- Card 3: Nose Filler -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="nose_filler.html">
 <img alt="Nose Filler" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/nose_filler_1773248332017.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -451,7 +457,7 @@ html
 <p class="text-white/70 text-xs">非手術鼻整形術可打造完美輪廓和平衡輪廓。</p>
 </div>
 </a>
- 卡 4：雕塑 
+<!-- Card 4: Sculptra -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="sculptra.html">
 <img alt="Sculptra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_sculptra_1773167925716.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -459,7 +465,7 @@ html
 <p class="text-white/70 text-xs">生物刺激填充劑可逐漸恢復臉部體積。</p>
 </div>
 </a>
- 卡5：咬肌肉毒桿菌 
+<!-- Card 5: Masseter Botox -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="masseter_botox.html">
 <img alt="Masseter Botox" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/masseter_botox_1773248344570.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -468,7 +474,7 @@ html
 <p class="text-white/70 text-xs">透過精準注射瘦身下巴並緩解緊張。</p>
 </div>
 </a>
- 卡六：雷射除毛 
+<!-- Card 6: Laser Hair Removal -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="laser_hair_removal.html">
 <img alt="Laser Hair Removal" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b43ddcd54817dc682220a4.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -477,7 +483,7 @@ html
 <p class="text-white/70 text-xs">適用於所有皮膚類型的最先進的永久除毛。</p>
 </div>
 </a>
- 卡 7：Hydrafacial（替換 V-Carbon） 
+<!-- Card 7: Hydrafacial (Replaced V-Carbon) -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="hydrafacial.html">
 <img alt="Hydrafacial" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b6d3ceeaf08109967eeec5.jpeg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -485,7 +491,7 @@ html
 <p class="text-white/70 text-xs">深層清潔、去角質和保濕，打造容光煥發的肌膚。</p>
 </div>
 </a>
- 卡8：微針 
+<!-- Card 8: Micro-Needling -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="micro_needling.html">
 <img alt="Micro-Needling" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_microneedling_1773167788209.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -493,7 +499,7 @@ html
 <p class="text-white/70 text-xs">膠原蛋白誘導療法可改善皮膚紋理和膚色。</p>
 </div>
 </a>
- 卡9：睡眠8 
+<!-- Card 9: Morpheus8 -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="morpheus8.html">
 <img alt="Morpheus8" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b6d548ad027680fcfc0330.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -501,24 +507,26 @@ html
 <p class="text-white/70 text-xs">先進的分段皮膚治療可刺激膠原蛋白的產生。</p>
 </div>
 </a>
- 卡10：超音波治療 
+<!-- Card 10: Ultherapy -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="ultherapy.html">
 <img alt="Ultherapy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_ultherapy_1773167720869.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
-<h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">超音波刀治療</h3>
-<p class="text-white/70 text-xs">對臉部、頸部和胸部進行非侵入性拉提和收緊。</p>
+<h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">好萊塢
+                剝皮</h3>
+<p class="text-white/70 text-xs">好萊塢
+                剝皮</p>
 </div>
 </a>
- 卡11：好萊塢果皮 
+<!-- Card 11: Hollywood Peel -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="hollywood_peel.html">
 <img alt="Hollywood Peel" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_hollywood_peel_1773167735441.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
 <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">好萊塢
                 剝皮</h3>
-<p class="text-white/70 text-xs">A carbon-assisted laser peel for instant glow and skin refinement.</p>
+<p class="text-white/70 text-xs">碳輔助雷射換膚，可瞬間煥發光彩並細化肌膚。</p>
 </div>
 </a>
- 卡13：男士肉毒桿菌 
+<!-- Card 12: Sweating (Replaced Acne Treatment) -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="sweating.html">
 <img alt="Sweating (Hyperhidrosis)" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b6d6a33767bfcd6a71965a.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -527,7 +535,7 @@ html
 <p class="text-white/70 text-xs">有效治療流汗過多，恢復舒適和自信。</p>
 </div>
 </a>
- 卡13：男士肉毒桿菌 
+<!-- Card 13: Botox for Men -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="botox_for_men.html">
 <img alt="Botox for Men" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_botox_men_1773167763015.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -535,7 +543,7 @@ html
 <p class="text-white/70 text-xs">量身訂製的注射治療可保持自然的男性氣質。</p>
 </div>
 </a>
- 卡14：ZO醫療 
+<!-- Card 14: ZO Medical -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="zo_medical.html">
 <img alt="ZO Medical" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_zo_medical_1773167804848.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -543,25 +551,25 @@ html
 <p class="text-white/70 text-xs">醫生處方的皮膚健康解決方案可帶來變革性的結果。</p>
 </div>
 </a>
- 卡 15：點陣重鋪 
+<!-- Card 15: Fractional Resurfacing -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="fractional_resurfacing.html">
 <img alt="Fractional Resurfacing" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_fractional_resurfacing_1773167819057.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
 <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">分數
                 重鋪表面</h3>
-<p class="text-white/70 text-xs">Targeted laser therapy to diminish scars and fine lines.</p>
+<p class="text-white/70 text-xs">預訂點陣換膚治療</p>
 </div>
 </a>
- 第十六卡：臉部輪廓 
+<!-- Card 16: Facial Contouring -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="facial_contouring.html">
 <img alt="Facial Contouring" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_facial_contouring_1773167831228.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
 <h3 class="text-white text-xl font-serif mb-1 group-hover:text-brand-gold transition-colors">臉部護理
                 輪廓</h3>
-<p class="text-white/70 text-xs">Expertly sculpting your natural features for perfect balance.</p>
+<p class="text-white/70 text-xs">專業塑造您的自然特徵，達到完美平衡。</p>
 </div>
 </a>
- 卡 17：臉部整形 
+<!-- Card 17: Facial Augmentations -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="facial_augmentations.html">
 <img alt="Facial Augmentations" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_facial_augmentations_1773167855988.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -570,7 +578,7 @@ html
 <p class="text-white/70 text-xs">使用優質真皮填充劑增強體積和清晰度。</p>
 </div>
 </a>
- 卡 18：側向舉升 
+<!-- Card 18: Lateral Lift -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="lateral_lift.html">
 <img alt="Lateral Lift" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_lateral_lift_1773167897592.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -578,7 +586,7 @@ html
 <p class="text-white/70 text-xs">輕微提拉眉毛和眼睛區域，打造更開放、更放鬆的外觀。</p>
 </div>
 </a>
- 卡 19：非手術整容 
+<!-- Card 19: Non-Surgical Facelift -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="non_surgical_facelift.html">
 <img alt="Non-Surgical Facelift" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_nonsurgical_facelift_1773167913138.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -587,7 +595,7 @@ html
 <p class="text-white/70 text-xs">無需停機即可實現臉部年輕化的綜合方法。</p>
 </div>
 </a>
- 卡 20：臉部 PRP 
+<!-- Card 20: Facial PRP -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="facial_prp.html">
 <img alt="Facial PRP" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_facial_prp_1773167939715.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -595,7 +603,7 @@ html
 <p class="text-white/70 text-xs">利用您自己的生長因子實現皮膚自然再生。</p>
 </div>
 </a>
- 卡 21：PRP 治療脫髮 
+<!-- Card 21: PRP for Hair Loss -->
 <a class="block relative rounded-twelve overflow-hidden group bento-card h-[300px]" href="prp_for_hair_loss.html">
 <img alt="PRP for Hair Loss" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="../images/tx_prp_hair_loss_1773167956958.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -608,20 +616,21 @@ html
 </div>
 </div>
 </section>
- 結束：互動式服務網格 
- 開始：聚光燈部分 
+<!-- END: Interactive Service Grid -->
+<!-- BEGIN: Spotlight Section -->
 <section class="bg-brand-olive/10 py-24">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div>
 <h4 class="text-brand-olive font-bold uppercase tracking-widest text-sm mb-4">特色護理</h4>
-<h2 class="font-serif text-4xl md:text-5xl mb-6">雷射除毛</h2>
+<h2 class="font-serif text-4xl md:text-5xl mb-6">我們最先進的雷射系統可為所有皮膚類型提供有效的除毛效果。光滑、無毛
+            現在可以實現零停機時間和最大舒適度。</h2>
 <p class="text-brand-deep/70 text-lg mb-8 leading-relaxed">我們最先進的雷射系統可為所有皮膚類型提供有效的除毛效果。光滑、無毛
             現在可以實現零停機時間和最大舒適度。</p>
 <div class="flex flex-col sm:flex-row gap-6 mb-10">
 <div class="bg-white p-6 rounded-twelve flex-1 shadow-sm">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">全身</p>
-<p class="text-3xl font-serif text-brand-deep">$650<span class="text-sm font-sans text-brand-deep/50">/session</span></p>
+<p class="text-3xl font-serif text-brand-deep">$650<span class="text-sm font-sans text-brand-deep/50">/會話</span></p>
 </div>
 <div class="bg-white p-6 rounded-twelve flex-1 shadow-sm">
 <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">臉與脖子</p>
@@ -636,8 +645,8 @@ html
 </div>
 </div>
 </section>
- 結束：聚光燈部分 
- 開始：部門 
+<!-- END: Spotlight Section -->
+<!-- BEGIN: Departments -->
 <section class="py-24 bg-brand-alabaster/50" id="departments">
 <div class="max-w-7xl mx-auto px-6">
 <div class="max-w-4xl mx-auto text-center mb-16">
@@ -647,7 +656,7 @@ html
           透過一系列精心整理的護理，讓您煥發活力，清晰便捷。</p>
 </div>
 <div class="flex flex-col md:flex-row gap-8 lg:gap-16">
- 選項卡列表 
+<!-- Tabs List -->
 <div class="w-full md:w-1/3 lg:w-1/4 flex flex-col border-l border-brand-olive/20">
 <button class="dept-tab active text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 font-bold text-brand-olive border-brand-olive" data-target="dept-1">雷射治療</button>
 <button class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster" data-target="dept-2">注射劑和填充劑</button>
@@ -655,9 +664,9 @@ html
 <button class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster" data-target="dept-4">提升和輪廓</button>
 <button class="dept-tab text-left px-6 py-4 border-l-2 -ml-[1px] transition-all duration-300 text-brand-deep/60 border-transparent hover:text-brand-olive hover:bg-brand-alabaster" data-target="dept-5">標靶治療</button>
 </div>
- 內容區 
+<!-- Content Area -->
 <div class="w-full md:w-2/3 lg:w-3/4">
- 內容1 
+<!-- Content 1 -->
 <div class="dept-content flex flex-col lg:flex-row gap-8 animate-fade-in" id="dept-1">
 <div class="flex-1 space-y-6">
 <h3 class="text-3xl font-serif text-brand-olive">雷射治療</h3>
@@ -672,7 +681,7 @@ html
 <img alt="Laser Treatments" class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" src="../images/tx_laser_hair_removal_1773167689107.png"/>
 </div>
 </div>
- 內容2 
+<!-- Content 2 -->
 <div class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in" id="dept-2">
 <div class="flex-1 space-y-6">
 <h3 class="text-3xl font-serif text-brand-olive">注射劑和填充劑</h3>
@@ -692,22 +701,22 @@ html
 <img alt="Injectables and Fillers" class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" src="../images/tx_botox_1773167674909.png"/>
 </div>
 </div>
- 內容3 
+<!-- Content 3 -->
 <div class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in" id="dept-3">
 <div class="flex-1 space-y-6">
 <h3 class="text-3xl font-serif text-brand-olive">臉部護理</h3>
 <p class="italic text-brand-deep/80 leading-relaxed text-lg">盡情享受奢華的臉部護理，放鬆與恢復活力的完美結合。這些
                 程序不僅呵護您的肌膚，還可以解決特定問題，恢復肌膚的自然光澤，
                 活力。</p>
-<p class="text-brand-deep/70 font-montserrat leading-relaxed">深入提升與塑形領域，藝術與科學的結合，重新定義與強調臉部輪廓
-                結構。這些程序證明了微妙的變化如何能夠產生深遠的影響，提升
-                一個人的容貌減了好幾年。</p>
+<p class="text-brand-deep/70 font-montserrat leading-relaxed">臉部護理為皮膚健康提供了多管齊下的方法。從深層清潔、去角質到
+                有針對性的精華液和治療面膜，每一步都旨在增強您的皮膚健康和
+                外觀。在一次療程中體驗放鬆和針對性護膚的雙重好處。</p>
 </div>
 <div class="w-full lg:w-5/12">
 <img alt="Facial Treatments" class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" src="../images/tx_hollywood_peel_1773167735441.png"/>
 </div>
 </div>
- 內容4 
+<!-- Content 4 -->
 <div class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in" id="dept-4">
 <div class="flex-1 space-y-6">
 <h3 class="text-3xl font-serif text-brand-olive">提升和輪廓</h3>
@@ -723,7 +732,7 @@ html
 <img alt="Lifts and Contouring" class="rounded-twelve w-full h-64 lg:h-full object-cover shadow-lg" src="../images/tx_ultherapy_1773167720869.png"/>
 </div>
 </div>
- 內容5 
+<!-- Content 5 -->
 <div class="dept-content hidden flex-col lg:flex-row gap-8 animate-fade-in" id="dept-5">
 <div class="flex-1 space-y-6">
 <h3 class="text-3xl font-serif text-brand-olive">標靶治療</h3>
@@ -743,15 +752,15 @@ html
 </div>
 </div>
 </section>
- 結束：部門 
- 專家2 
+<!-- END: Departments -->
+<!-- BEGIN: Specialist Profiles -->
 <section class="py-24 max-w-7xl mx-auto px-6" id="team">
 <div class="text-center mb-16">
 <h2 class="font-serif text-4xl md:text-5xl mb-4">認識我們的專家</h2>
 <p class="text-brand-deep/60">由醫療專業人員的雙手指導。</p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
- 專家1 
+<!-- Specialist 1 -->
 <div class="text-center">
 <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
 <img alt="Dr. Vahid Sahihnolnasab" class="w-full h-full object-cover" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab9814ebc365534ac9c0.jpg"/>
@@ -762,7 +771,7 @@ html
 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
 </div>
 </div>
- 專家2 
+<!-- Specialist 2 -->
 <div class="text-center">
 <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
 <img alt="Marjan Madani" class="w-full h-full object-cover" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab9880d3591e775ceac5.jpg"/>
@@ -773,7 +782,7 @@ html
 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
 </div>
 </div>
- 專家3 
+<!-- Specialist 3 -->
 <div class="text-center">
 <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
 <img alt="Leila Sahih" class="w-full h-full object-cover" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69adab98e041da4c2c9abeb4.jpeg"/>
@@ -784,7 +793,7 @@ html
 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
 </div>
 </div>
- 專家4 
+<!-- Specialist 4 -->
 <div class="text-center">
 <div class="aspect-square mb-6 overflow-hidden rounded-twelve">
 <img alt="Angela Huang" class="w-full h-full object-cover" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b197f7c2389c3fb84e8abf.jpg"/>
@@ -796,7 +805,7 @@ html
 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
 </div>
 </div>
- 專家5 
+<!-- Specialist 5 -->
 <div class="text-center">
 <div class="aspect-square mb-6 overflow-hidden rounded-twelve bg-brand-olive/5 flex items-center justify-center">
 <span class="material-symbols-outlined text-brand-olive/20 text-6xl">人</span>
@@ -816,52 +825,55 @@ html
 <div class="w-12 h-0.5 bg-brand-gold mx-auto"></div>
 </div>
 <div class="relative testimonial-slider">
- 感言1 
+<!-- Testimonial 1 -->
 <input checked="" class="hidden slider-dot" id="t-1" name="testimonial" type="radio"/>
 <div class="testimonial-content text-center">
 <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">「剛剛和 Marjan 進行了水面部護理，效果太棒了！她非常友善和專業，向我解釋了一切，之後我的皮膚感覺/看起來非常乾淨。與其他地方相比，她的水面部護理的價格也非常合理，這太棒了。預約後我回到家時，我的家人給了我很多讚美！我強烈推薦她，我將來肯定會回去。」</p>
 <div class="space-y-1">
-<h4 class="font-bold text-lg">「進行雷射除毛的好地方！值得從華盛頓一路開車過來。Marjan 非常樂於助人，知識淵博。我總是感覺很舒服，我覺得我可以完全信任她。強烈推薦！”</h4>
+<h4 class="font-bold text-lg">邊緣地帶</h4>
 <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">水光臉部護理</p>
 </div>
 </div>
- 感言2 
+<!-- Testimonial 2 -->
 <input class="hidden slider-dot" id="t-2" name="testimonial" type="radio"/>
 <div class="testimonial-content text-center">
 <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">「進行雷射除毛的好地方！值得從華盛頓一路開車過來。Marjan 非常樂於助人，知識淵博。我總是感覺很舒服，我覺得我可以完全信任她。強烈推薦！”</p>
 <div class="space-y-1">
 <h4 class="font-bold text-lg">朱迪絲·坎格隆</h4>
-<p class="text-brand-gold text-xs font-bold uppercase tracking-widest">雷射除毛</p>
+<p class="text-brand-gold text-xs font-bold uppercase tracking-widest">我們最先進的雷射系統可為所有皮膚類型提供有效的除毛效果。光滑、無毛
+            現在可以實現零停機時間和最大舒適度。</p>
 </div>
 </div>
- 感言3 
+<!-- Testimonial 3 -->
 <input class="hidden slider-dot" id="t-3" name="testimonial" type="radio"/>
 <div class="testimonial-content text-center">
 <p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">「Marjan 在我的腋下和比基尼上創造了奇蹟。在過去的 6 個月裡，我一直去找她，她改變了我的生活！！Marjan 本人是一位非常善良的女士。每次我在那裡都非常熱情和熱情。她並不急於嘗試推銷服務，相反，她對服務本身所推銷的主題非常了解。</p>
 <div class="space-y-1">
 <h4 class="font-bold text-lg">中號</h4>
-<p class="text-brand-gold text-xs font-bold uppercase tracking-widest">雷射除毛</p>
+<p class="text-brand-gold text-xs font-bold uppercase tracking-widest">我們最先進的雷射系統可為所有皮膚類型提供有效的除毛效果。光滑、無毛
+            現在可以實現零停機時間和最大舒適度。</p>
 </div>
 </div>
- 感言4 
+<!-- Testimonial 4 -->
 <input class="hidden slider-dot" id="t-4" name="testimonial" type="radio"/>
 <div class="testimonial-content text-center">
 <p class="font-serif text-lg md:text-2xl italic text-brand-deep/80 leading-relaxed mb-8">「謝謝 Marjan！我來這裡激光脫毛已經一年多了，效果驚人。現在我每年都會去一次，只是為了修飾。我很害怕去更大的美容院，但我覺得 Marjan 就像家人一樣。她還向我介紹了脫毛和生長的過程。我很欣賞一些激光脫毛服務的折扣，與我在里士滿看過的其他地方相比，價格更實惠。”</p>
 <div class="space-y-1">
 <h4 class="font-bold text-lg">安妮琪</h4>
-<p class="text-brand-gold text-xs font-bold uppercase tracking-widest">雷射除毛</p>
+<p class="text-brand-gold text-xs font-bold uppercase tracking-widest">我們最先進的雷射系統可為所有皮膚類型提供有效的除毛效果。光滑、無毛
+            現在可以實現零停機時間和最大舒適度。</p>
 </div>
 </div>
- 感言5 
+<!-- Testimonial 5 -->
 <input class="hidden slider-dot" id="t-5" name="testimonial" type="radio"/>
 <div class="testimonial-content text-center">
-<p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">"100% recommended!! I got good results and Marjan is very gentle and kind whenever I go see her. She won’t force you to do this treatment instead she will educate you. Such a lovely woman and I’m always happy seeing her because she makes good connections with her clients. If you need a laser treatment, you should consider going to her."</p>
+<p class="font-serif text-2xl md:text-3xl italic text-brand-deep/80 leading-relaxed mb-8">「100%推薦！！我取得了很好的效果，每次我去看Marjan時，她都非常溫柔和友善。她不會強迫你做這種治療，而是會教育你。這樣一個可愛的女人，我總是很高興見到她，因為她與她的客戶建立了良好的關係。如果你需要激光治療，你應該考慮去找她。”</p>
 <div class="space-y-1">
 <h4 class="font-bold text-lg">克里謝林·帕明圖安</h4>
 <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">雷射治療</p>
 </div>
 </div>
- 雪佛龍_左 
+<!-- Navigation Dots -->
 <div class="flex justify-center space-x-3 mt-12">
 <label class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors" for="t-1"></label>
 <label class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors" for="t-2"></label>
@@ -869,7 +881,7 @@ html
 <label class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors" for="t-4"></label>
 <label class="w-3 h-3 rounded-full border border-brand-olive cursor-pointer hover:bg-brand-olive/50 transition-colors" for="t-5"></label>
 </div>
- 雪佛龍_左 
+<!-- Arrows -->
 <div class="absolute top-1/2 -translate-y-1/2 left-0 hidden md:block">
 <span class="material-symbols-outlined text-brand-olive cursor-pointer select-none">雪佛龍_左</span>
 </div>
@@ -879,134 +891,75 @@ html
 </div>
 </div>
 </section>
- 結束：專家簡介 
- 開始：常見問題部分 
+<!-- END: Specialist Profiles -->
+<!-- BEGIN: FAQ Section -->
 <section class="py-24 bg-white" id="faq">
 <div class="max-w-3xl mx-auto px-6">
-<h2 class="font-serif text-4xl text-center mb-16"><!-- 問題 1 -->
+<h2 class="font-serif text-4xl text-center mb-16">常見問題解答</h2>
+<div class="space-y-0 border-t border-brand-olive/10">
+<!-- Question 1 -->
 <details class="group py-6 border-b border-brand-olive/10">
-<summary class="flex items-center justify- Between font-bold text-lg 遊標指標清單-none">
-<span>第一次諮詢期間我可以期待什麼？ </span>
+<summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none"><span>第一次諮詢期間我可以期待什麼？ </span>
 <span class="transition group-open:rotate-180">
 <svg 0="" 24="" 24”="" class="“w-5" h-5”填充="“無”行程=“currentColor”viewbox=“0">
 &lt;路徑d =「M19 9l-7 7-7-7」行程線帽=「圓形」行程線加入=「圓形」行程寬度=「2」&gt;<!--路徑-->
 </svg>
-</span>
-<!--摘要-->
-<p class="mt-4 text-brand-deep/70leading-relaxed font-montserrat">
-            您的第一次訪問包括全面的皮膚分析和深入了解您的美學目標。我們
-            討論病史、生活方式，並制定專門針對您的需求的路線圖。
-          </p>
-<!--詳情-->
-<!-- 問題 2 -->
+</span></summary>
+<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">您的第一次訪問包括全面的皮膚分析和深入了解您的美學目標。我們
+            討論病史、生活方式，並制定專門針對您的需求的路線圖。</p>
+</details>
+<!-- Question 2 -->
 <details class="group py-6 border-b border-brand-olive/10">
-<summary class="flex items-center justify- Between font-bold text-lg 遊標指標清單-none">
-<span>真皮填充劑效果能持續多久？ </span>
+<summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none">真皮填充劑效果能持續多久？</summary>
+<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">通常，效果可持續 6 至 18 個月，具體取決於所使用的產品和治療的區域。
+            新陳代謝和生活方式也是長壽的因素。</p>
+</details>
+<!-- Question 3 -->
+<details class="group py-6 border-b border-brand-olive/10">
+<summary class="flex items-center justify-between font-bold text-lg cursor-pointer list-none"><span>雷射除毛是永久性的嗎？ </span>
 <span class="transition group-open:rotate-180">
 <svg 0="" 24="" 24”="" class="“w-5" h-5”填充="“無”行程=“currentColor”viewbox=“0">
 &lt;路徑d =「M19 9l-7 7-7-7」行程線帽=「圓形」行程線加入=「圓形」行程寬度=「2」&gt;<!--路徑-->
 </svg>
-</span>
-<!--摘要-->
-<p class="mt-4 text-brand-deep/70leading-relaxed font-montserrat">
-            通常，效果可持續 6 至 18 個月，具體取決於所使用的產品和治療的區域。
-            新陳代謝和生活方式也是長壽的因素。
-          </p>
-<!--詳情-->
-<!-- 問題 3 -->
-<details class="group py-6 border-b border-brand-olive/10">
-<summary class="flex items-center justify- Between font-bold text-lg 遊標指標清單-none">
-<span>雷射除毛是永久性的嗎？ </span>
-<span class="transition group-open:rotate-180">
-<svg 0="" 24="" 24”="" class="“w-5" h-5”填充="“無”行程=“currentColor”viewbox=“0">
-&lt;路徑d =「M19 9l-7 7-7-7」行程線帽=「圓形」行程線加入=「圓形」行程寬度=「2」&gt;<!--路徑-->
-</svg>
-</span>
-<!--摘要-->
-<p class="mt-4 text-brand-deep/70leading-relaxed font-montserrat">
-            雷射除毛可實現長期除毛。大多數患者都會經歷顯著且永久性的
-            整個療程後毛髮生長減少。
-          </p>
-<!--詳情--></summary></details></summary></details></summary></details></h2>
-<div class="space-y-0 border-t border-brand-olive/10"><!-- 問題 1 -->
-<details class="group py-6 border-b border-brand-olive/10">
-<summary class="flex items-center justify- Between font-bold text-lg 遊標指標清單-none">
-<span>第一次諮詢期間我可以期待什麼？ </span>
-<span class="transition group-open:rotate-180">
-<svg 0="" 24="" 24”="" class="“w-5" h-5”填充="“無”行程=“currentColor”viewbox=“0">
-&lt;路徑d =「M19 9l-7 7-7-7」行程線帽=「圓形」行程線加入=「圓形」行程寬度=「2」&gt;<!--路徑-->
-</svg>
-</span>
-<!--摘要-->
-<p class="mt-4 text-brand-deep/70leading-relaxed font-montserrat">
-            您的第一次訪問包括全面的皮膚分析和深入了解您的美學目標。我們
-            討論病史、生活方式，並制定專門針對您的需求的路線圖。
-          </p>
-<!--詳情-->
-<!-- 問題 2 -->
-<details class="group py-6 border-b border-brand-olive/10">
-<summary class="flex items-center justify- Between font-bold text-lg 遊標指標清單-none">
-<span>真皮填充劑效果能持續多久？ </span>
-<span class="transition group-open:rotate-180">
-<svg 0="" 24="" 24”="" class="“w-5" h-5”填充="“無”行程=“currentColor”viewbox=“0">
-&lt;路徑d =「M19 9l-7 7-7-7」行程線帽=「圓形」行程線加入=「圓形」行程寬度=「2」&gt;<!--路徑-->
-</svg>
-</span>
-<!--摘要-->
-<p class="mt-4 text-brand-deep/70leading-relaxed font-montserrat">
-            通常，效果可持續 6 至 18 個月，具體取決於所使用的產品和治療的區域。
-            新陳代謝和生活方式也是長壽的因素。
-          </p>
-<!--詳情-->
-<!-- 問題 3 -->
-<details class="group py-6 border-b border-brand-olive/10">
-<summary class="flex items-center justify- Between font-bold text-lg 遊標指標清單-none">
-<span>雷射除毛是永久性的嗎？ </span>
-<span class="transition group-open:rotate-180">
-<svg 0="" 24="" 24”="" class="“w-5" h-5”填充="“無”行程=“currentColor”viewbox=“0">
-&lt;路徑d =「M19 9l-7 7-7-7」行程線帽=「圓形」行程線加入=「圓形」行程寬度=「2」&gt;<!--路徑-->
-</svg>
-</span>
-<!--摘要-->
-<p class="mt-4 text-brand-deep/70leading-relaxed font-montserrat">
-            雷射除毛可實現長期除毛。大多數患者都會經歷顯著且永久性的
-            整個療程後毛髮生長減少。
-          </p>
-<!--詳情--></summary></details></summary></details></summary></details></div>
+</span></summary>
+<p class="mt-4 text-brand-deep/70 leading-relaxed font-montserrat">雷射除毛可實現長期除毛。大多數患者都會經歷顯著且永久性的
+            整個療程後毛髮生長減少。</p>
+</details>
+</div>
 </div>
 </section>
- 結束：常見問題部分 
- 開始：獎項部分 
+<!-- END: FAQ Section -->
+<!-- BEGIN: Awards Section -->
 <section class="py-24 border-t border-brand-olive/10 bg-brand-alabaster" id="awards">
 <div class="max-w-7xl mx-auto px-6 text-center">
-<h4 class="text-brand-olive font-bold uppercase tracking-widest text-sm mb-4">里士滿最好的雷射</h4>
+<h4 class="text-brand-olive font-bold uppercase tracking-widest text-sm mb-4">卓越的認可</h4>
 <h2 class="font-serif text-4xl md:text-5xl mb-12">里士滿最好的雷射</h2>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-center">
- 2025年獎項 
+<!-- 2025 Award -->
 <div class="flex flex-col items-center">
-<a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a309f3d78f3028180684.jpg" rel="noopener" target="_blank"><img alt="2025 Best Laser in Richmond" class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-twelve hover:scale-105 transition-transform duration-300 cursor-pointer" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a309f3d78f3028180684.jpg"/></a>
+<a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a309f3d78f3028180684.jpg" rel="noopener" target="_blank"><img alt="2024 里士滿最佳雷射" class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-12提示:scale-105 過渡-變換持續時間-300 光標指針" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a30978565a847841e810.jpg"/></a>
 </div>
- 2024年獎項 
+<!-- 2024 Award -->
 <div class="flex flex-col items-center">
 <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a30978565a847841e810.jpg" rel="noopener" target="_blank"><img alt="2024 里士滿最佳雷射" class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-12提示:scale-105 過渡-變換持續時間-300 光標指針" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a30978565a847841e810.jpg"/></a>
 </div>
- 2023年獎項 
+<!-- 2023 Award -->
 <div class="flex flex-col items-center">
 <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b478565a145a41ac74.jpg" rel="noopener" target="_blank"><img alt="2023 里士滿最佳雷射" class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-12提示:scale-105 過渡-變換持續時間-300 光標指針" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b478565a145a41ac74.jpg"/></a>
 </div>
- 2022年獎項 
+<!-- 2022 Award -->
 <div class="flex flex-col items-center">
 <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b48d3eae93b61c882c.jpg" rel="noopener" target="_blank"><img alt="2022 里士滿最佳雷射" class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-12提示:scale-105 過渡-變換持續時間-300 光標指針" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b48d3eae93b61c882c.jpg"/></a>
 </div>
- 結束：頒獎部分 
+<!-- 2021 Award -->
 <div class="flex flex-col items-center">
 <a href="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b47fc07cb3bd98b359.jpg" rel="noopener" target="_blank"><img alt="2021 里士滿最佳雷射" class="w-full max-w-[240px] object-contain drop-shadow-lg rounded-12提示:scale-105 過渡-變換持續時間-300 光標指針" src="https://assets.cdn.filesafe.space/pWlFe9i46QOOHhVfmtgR/media/69b1a1b47fc07cb3bd98b359.jpg"/></a>
 </div>
 </div>
 </div>
 </section>
- 開始：社會證明 
- 結束：社會證明 
+<!-- END: Awards Section -->
+<!-- BEGIN: Social Proof -->
 <section class="py-24 bg-white">
 <div class="max-w-7xl mx-auto px-6">
 <div class="flex justify-between items-end mb-12">
@@ -1022,17 +975,17 @@ html
 </div>
 </div>
 </section>
- 結束：社會證明 
- 開始：方向和停車指南 
+<!-- END: Social Proof -->
+<!-- BEGIN: Direction & Parking Guide -->
 <section class="py-24 bg-brand-alabaster relative border-t border-brand-olive/10" id="directions">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
 <h2 class="font-serif text-4xl md:text-5xl mb-4">地點及地點免費停車</h2>
 <p class="text-brand-deep/60 max-w-2xl mx-auto">我們的地址是<strong>6388 No. 3 Road, Suite 1110</strong>（No. 3 和 Cook Road 的轉角）。按照我們的視覺指南輕鬆進入我們指定的免費停車場。</p>
 </div>
- 步驟 
+<!-- Steps -->
 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
- 步驟3 
+<!-- Step 1 -->
 <div class="bg-white rounded-twelve overflow-hidden shadow-sm border border-brand-olive/10 flex flex-col group hover:shadow-md transition-shadow">
 <div class="relative aspect-square overflow-hidden bg-gray-100">
 <img alt="Building Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../images/parking_1.jpg"/>
@@ -1040,10 +993,10 @@ html
 </div>
 <div class="p-6 flex-1 flex flex-col">
 <h3 class="font-serif text-lg mb-2">抵達凱爾特廣場</h3>
-<p class="text-brand-deep/70 text-sm leading-relaxed">轉到庫克路</p>
+<p class="text-brand-deep/70 text-sm leading-relaxed">里士滿中心對面。建築物擁有引人注目的土著藝術壁畫。</p>
 </div>
 </div>
- 步驟2 
+<!-- Step 2 -->
 <div class="bg-white rounded-twelve overflow-hidden shadow-sm border border-brand-olive/10 flex flex-col group hover:shadow-md transition-shadow">
 <div class="relative aspect-square overflow-hidden bg-gray-100">
 <img alt="Parking Entrance Intersection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../images/parking_5.jpg"/>
@@ -1051,10 +1004,10 @@ html
 </div>
 <div class="p-6 flex-1 flex flex-col">
 <h3 class="font-serif text-lg mb-2">轉到庫克路</h3>
-<p class="text-brand-deep/70 text-sm leading-relaxed">進入車庫</p>
+<p class="text-brand-deep/70 text-sm leading-relaxed">停車場入口位於庫克路。尋找指示入口的“P”標誌。</p>
 </div>
 </div>
- 步驟3 
+<!-- Step 3 -->
 <div class="bg-white rounded-twelve overflow-hidden shadow-sm border border-brand-olive/10 flex flex-col group hover:shadow-md transition-shadow">
 <div class="relative aspect-square overflow-hidden bg-gray-100">
 <img alt="Garage Entrance" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../images/parking_2.jpg"/>
@@ -1065,7 +1018,7 @@ html
 <p class="text-brand-deep/70 text-sm leading-relaxed">進入派拉蒙/凱爾特停車場。 L1 和 L1 的遊客點已開放。 L2。</p>
 </div>
 </div>
- 步驟4 
+<!-- Step 4 -->
 <div class="bg-white rounded-twelve overflow-hidden shadow-sm border border-brand-olive/10 flex flex-col group hover:shadow-md transition-shadow">
 <div class="relative aspect-square overflow-hidden bg-gray-100">
 <img alt="Inside the Garage" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../images/parking_4.jpg"/>
@@ -1076,7 +1029,7 @@ html
 <p class="text-brand-deep/70 text-sm leading-relaxed"><strong>不要</strong>左轉或向下走。請直接開車進入派拉蒙遊客停車場。</p>
 </div>
 </div>
- 步驟5 
+<!-- Step 5 -->
 <div class="bg-white rounded-twelve overflow-hidden shadow-sm border border-brand-olive/10 flex flex-col group hover:shadow-md transition-shadow">
 <div class="relative aspect-square overflow-hidden bg-gray-100">
 <img alt="Elevator Lobby" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../images/parking_3.jpg"/>
@@ -1090,28 +1043,28 @@ html
 </div>
 </div>
 </section>
- 結束：路線及停車指南 
- 開始：頁腳 
+<!-- END: Direction & Parking Guide -->
+<!-- BEGIN: Footer -->
 <footer class="bg-white border-t border-brand-olive/10 pt-20 pb-10">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
- 地圖 
+<!-- Map -->
 <div class="w-full h-[400px] bg-brand-alabaster rounded-twelve overflow-hidden shadow-inner border border-brand-olive/10">
 <iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.53574709007!2d-123.135496!3d49.1666824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548675262bb08ead%3A0x7e76c905ed6b6a5d!2sMarjan%20DaVinci%20Laser%20%26%20Cosmetic%20Clinic!5e1!3m2!1sen!2sca!4v1773448067594!5m2!1sen!2sca" style="border:0; filter: grayscale(100%) invert(5%) contrast(85%);" width="100%"></iframe>
 </div>
- 聯絡方式 
+<!-- Contacts -->
 <div class="flex flex-col justify-center">
-<h2 class="font-serif text-4xl mb-8">地點</h2>
+<h2 class="font-serif text-4xl mb-8">聯絡我們</h2>
 <div class="space-y-6">
 <div>
 <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">地點</p>
 <p class="text-xl font-medium">查詢</p>
 </div>
 <div>
-<p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">診所及雷射：</p>
+<p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">查詢</p>
 <p class="text-xl font-medium"><a class="hover:text-brand-gold transition-colors" href="mailto:Hello@marjandavinci.com">你好@marjandavinci.com</a></p>
 <div class="mt-2 text-brand-deep/80">
-<p class="text-sm uppercase tracking-widest text-brand-gold font-bold">778-999-2416</p>
+<p class="text-sm uppercase tracking-widest text-brand-gold font-bold">診所及雷射：</p>
 <p class="text-xl font-medium"><a class="hover:text-brand-gold transition-colors" href="tel:7789992416">778-999-2416</a></p>
 </div>
 <div class="mt-2 text-brand-deep/80">
@@ -1120,7 +1073,7 @@ html
 </div>
 </div>
 <div class="flex space-x-6 pt-4">
-<a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.instagram.com/marjandavinci" rel="noopener" target="_blank">© 2024 Marjan DaVinci Laser &amp; 保留所有權利。化妝品。版權所有。</a>
+<a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.instagram.com/marjandavinci" rel="noopener" target="_blank">Instagram</a>
 <a class="text-brand-deep hover:text-brand-gold transition-colors" href="https://www.facebook.com/marjanlaser" rel="noopener" target="_blank">Facebook</a>
 </div>
 </div>
@@ -1129,7 +1082,7 @@ html
 <div class="text-center pt-10 border-t border-brand-olive/5 text-xs text-brand-deep/40 tracking-widest uppercase">© 2024 Marjan DaVinci Laser &amp; 保留所有權利。化妝品。版權所有。</div>
 </div>
 </footer>
- 結束：頁腳 
+<!-- END: Footer -->
 <script>
       (function () {
         const testimonials = document.querySelectorAll('input[name="testimonial"]');
